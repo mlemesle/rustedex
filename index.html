@@ -1,0 +1,3486 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Rustedex</title>
+  <meta name="description" content="A Pokedex, written in Rust.">
+  <meta name="author" content="mlemesle">
+
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AADq/wAPYwAAAP8iADTWGAD/UQAA/zsFAP/sPQAAAP8AAP/3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmZmQAAAAmZmZmZmZmZmSIpk5kAkACZmZkzOZmZmZl3eZOZZmZmmZmZmZlmZmaZGqoRGZmZmZkaqhEZREREmRAQERlERESZERERGURERJmZmZmZmZmZmYiZmZmZmZAJiJklWQAAAAmZmZmZAAAAD//wAA//8AAAB/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAB/AAAAfwAA" rel="icon" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link href="/rustedex/assets/css/rustedex.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="content">
+    <div class="text-center">
+    	<ul>
+			<li>
+    				  <a href="pokemons/bulbasaur.html">Bulbizarre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ivysaur.html">Herbizarre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/venusaur.html">Florizarre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/charmander.html">Salamèche</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/charmeleon.html">Reptincel</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/charizard.html">Dracaufeu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/squirtle.html">Carapuce</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wartortle.html">Carabaffe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/blastoise.html">Tortank</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/caterpie.html">Chenipan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/metapod.html">Chrysacier</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/butterfree.html">Papilusion</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/weedle.html">Aspicot</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kakuna.html">Coconfort</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/beedrill.html">Dardargnan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pidgey.html">Roucool</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pidgeotto.html">Roucoups</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pidgeot.html">Roucarnage</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rattata.html">Rattata</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/raticate.html">Rattatac</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/spearow.html">Piafabec</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/fearow.html">Rapasdepic</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ekans.html">Abo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/arbok.html">Arbok</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/raichu.html">Raichu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sandshrew.html">Sabelette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sandslash.html">Sablaireau</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nidoran-f.html">Nidoran♀</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nidorina.html">Nidorina</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nidoqueen.html">Nidoqueen</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nidoran-m.html">Nidoran♂</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nidorino.html">Nidorino</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nidoking.html">Nidoking</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/clefairy.html">Mélofée</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/clefable.html">Mélodelfe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vulpix.html">Goupix</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ninetales.html">Feunard</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/jigglypuff.html">Rondoudou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wigglytuff.html">Grodoudou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zubat.html">Nosferapti</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/golbat.html">Nosferalto</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/oddish.html">Mystherbe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gloom.html">Ortide</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vileplume.html">Rafflesia</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/paras.html">Paras</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/parasect.html">Parasect</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/venonat.html">Mimitoss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/venomoth.html">Aéromite</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/diglett.html">Taupiqueur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dugtrio.html">Triopikeur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meowth.html">Miaouss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/persian.html">Persian</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/psyduck.html">Psykokwak</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/golduck.html">Akwakwak</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mankey.html">Férosinge</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/primeape.html">Colossinge</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/growlithe.html">Caninos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/arcanine.html">Arcanin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/poliwag.html">Ptitard</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/poliwhirl.html">Têtarte</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/poliwrath.html">Tartard</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/abra.html">Abra</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kadabra.html">Kadabra</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/alakazam.html">Alakazam</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/machop.html">Machoc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/machoke.html">Machopeur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/machamp.html">Mackogneur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bellsprout.html">Chétiflor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/weepinbell.html">Boustiflor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/victreebel.html">Empiflor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tentacool.html">Tentacool</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tentacruel.html">Tentacruel</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/geodude.html">Racaillou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/graveler.html">Gravalanch</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/golem.html">Grolem</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ponyta.html">Ponyta</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rapidash.html">Galopa</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slowpoke.html">Ramoloss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slowbro.html">Flagadoss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/magnemite.html">Magnéti</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/magneton.html">Magnéton</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/farfetchd.html">Canarticho</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/doduo.html">Doduo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dodrio.html">Dodrio</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/seel.html">Otaria</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dewgong.html">Lamantine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/grimer.html">Tadmorv</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/muk.html">Grotadmorv</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shellder.html">Kokiyas</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cloyster.html">Crustabri</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gastly.html">Fantominus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/haunter.html">Spectrum</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gengar.html">Ectoplasma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/onix.html">Onix</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/drowzee.html">Soporifik</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hypno.html">Hypnomade</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/krabby.html">Krabby</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kingler.html">Krabboss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/voltorb.html">Voltorbe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/electrode.html">Électrode</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/exeggcute.html">Noeunoeuf</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/exeggutor.html">Noadkoko</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cubone.html">Osselait</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/marowak.html">Ossatueur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hitmonlee.html">Kicklee</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hitmonchan.html">Tygnon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lickitung.html">Excelangue</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/koffing.html">Smogo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/weezing.html">Smogogo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rhyhorn.html">Rhinocorne</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rhydon.html">Rhinoféros</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chansey.html">Leveinard</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tangela.html">Saquedeneu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kangaskhan.html">Kangourex</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/horsea.html">Hypotrempe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/seadra.html">Hypocéan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/goldeen.html">Poissirène</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/seaking.html">Poissoroy</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/staryu.html">Stari</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/starmie.html">Staross</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mr-mime.html">M. Mime</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/scyther.html">Insécateur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/jynx.html">Lippoutou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/electabuzz.html">Élektek</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/magmar.html">Magmar</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pinsir.html">Scarabrute</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tauros.html">Tauros</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/magikarp.html">Magicarpe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gyarados.html">Léviator</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lapras.html">Lokhlass</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ditto.html">Métamorph</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/eevee.html">Évoli</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vaporeon.html">Aquali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/jolteon.html">Voltali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/flareon.html">Pyroli</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/porygon.html">Porygon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/omanyte.html">Amonita</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/omastar.html">Amonistar</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kabuto.html">Kabuto</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kabutops.html">Kabutops</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/aerodactyl.html">Ptéra</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/snorlax.html">Ronflex</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/articuno.html">Artikodin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zapdos.html">Électhor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/moltres.html">Sulfura</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dratini.html">Minidraco</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dragonair.html">Draco</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dragonite.html">Dracolosse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mewtwo.html">Mewtwo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mew.html">Mew</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chikorita.html">Germignon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bayleef.html">Macronium</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meganium.html">Méganium</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cyndaquil.html">Héricendre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/quilava.html">Feurisson</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/typhlosion.html">Typhlosion</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/totodile.html">Kaiminus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/croconaw.html">Crocrodil</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/feraligatr.html">Aligatueur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sentret.html">Fouinette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/furret.html">Fouinar</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hoothoot.html">Hoothoot</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/noctowl.html">Noarfang</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ledyba.html">Coxy</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ledian.html">Coxyclaque</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/spinarak.html">Mimigal</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ariados.html">Migalos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/crobat.html">Nostenfer</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chinchou.html">Loupio</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lanturn.html">Lanturn</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pichu.html">Pichu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cleffa.html">Mélo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/igglybuff.html">Toudoudou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/togepi.html">Togepi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/togetic.html">Togetic</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/natu.html">Natu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/xatu.html">Xatu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mareep.html">Wattouat</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/flaaffy.html">Lainergie</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ampharos.html">Pharamp</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bellossom.html">Joliflor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/marill.html">Marill</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/azumarill.html">Azumarill</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sudowoodo.html">Simularbre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/politoed.html">Tarpaud</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hoppip.html">Granivol</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/skiploom.html">Floravol</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/jumpluff.html">Cotovol</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/aipom.html">Capumain</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sunkern.html">Tournegrin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sunflora.html">Héliatronc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/yanma.html">Yanma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wooper.html">Axoloto</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/quagsire.html">Maraiste</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/espeon.html">Mentali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/umbreon.html">Noctali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/murkrow.html">Cornèbre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slowking.html">Roigada</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/misdreavus.html">Feuforêve</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/unown.html">Zarbi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wobbuffet.html">Qulbutoké</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/girafarig.html">Girafarig</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pineco.html">Pomdepik</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/forretress.html">Foretress</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dunsparce.html">Insolourdo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gligar.html">Scorplane</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/steelix.html">Steelix</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/snubbull.html">Snubbull</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/granbull.html">Granbull</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/qwilfish.html">Qwilfish</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/scizor.html">Cizayox</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shuckle.html">Caratroc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/heracross.html">Scarhino</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sneasel.html">Farfuret</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/teddiursa.html">Teddiursa</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ursaring.html">Ursaring</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slugma.html">Limagma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/magcargo.html">Volcaropod</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/swinub.html">Marcacrin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/piloswine.html">Cochignon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/corsola.html">Corayon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/remoraid.html">Rémoraid</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/octillery.html">Octillery</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/delibird.html">Cadoizo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mantine.html">Démanta</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/skarmory.html">Airmure</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/houndour.html">Malosse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/houndoom.html">Démolosse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kingdra.html">Hyporoi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/phanpy.html">Phanpy</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/donphan.html">Donphan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/porygon2.html">Porygon2</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/stantler.html">Cerfrousse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/smeargle.html">Queulorior</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tyrogue.html">Debugant</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hitmontop.html">Kapoera</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/smoochum.html">Lippouti</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/elekid.html">Élekid</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/magby.html">Magby</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/miltank.html">Écrémeuh</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/blissey.html">Leuphorie</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/raikou.html">Raikou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/entei.html">Entei</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/suicune.html">Suicune</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/larvitar.html">Embrylex</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pupitar.html">Ymphect</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tyranitar.html">Tyranocif</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lugia.html">Lugia</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ho-oh.html">Ho-Oh</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/celebi.html">Celebi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/treecko.html">Arcko</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/grovyle.html">Massko</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sceptile.html">Jungko</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/torchic.html">Poussifeu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/combusken.html">Galifeu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/blaziken.html">Braségali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mudkip.html">Gobou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/marshtomp.html">Flobio</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/swampert.html">Laggron</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/poochyena.html">Medhyèna</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mightyena.html">Grahyèna</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zigzagoon.html">Zigzaton</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/linoone.html">Linéon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wurmple.html">Chenipotte</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/silcoon.html">Armulys</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/beautifly.html">Charmillon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cascoon.html">Blindalys</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dustox.html">Papinox</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lotad.html">Nénupiot</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lombre.html">Lombre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ludicolo.html">Ludicolo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/seedot.html">Grainipiot</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nuzleaf.html">Pifeuil</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shiftry.html">Tengalice</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/taillow.html">Nirondelle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/swellow.html">Hélédelle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wingull.html">Goélise</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pelipper.html">Bekipan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ralts.html">Tarsal</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kirlia.html">Kirlia</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gardevoir.html">Gardevoir</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/surskit.html">Arakdo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/masquerain.html">Maskadra</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shroomish.html">Balignon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/breloom.html">Chapignon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slakoth.html">Parecool</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vigoroth.html">Vigoroth</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slaking.html">Monaflèmit</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nincada.html">Ningale</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ninjask.html">Ninjask</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shedinja.html">Munja</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/whismur.html">Chuchmur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/loudred.html">Ramboum</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/exploud.html">Brouhabam</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/makuhita.html">Makuhita</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hariyama.html">Hariyama</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/azurill.html">Azurill</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nosepass.html">Tarinor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/skitty.html">Skitty</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/delcatty.html">Delcatty</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sableye.html">Ténéfix</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mawile.html">Mysdibule</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/aron.html">Galekid</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lairon.html">Galegon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/aggron.html">Galeking</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meditite.html">Méditikka</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/medicham.html">Charmina</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/electrike.html">Dynavolt</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/manectric.html">Élecsprint</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/plusle.html">Posipi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minun.html">Négapi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/volbeat.html">Muciole</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/illumise.html">Lumivole</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/roselia.html">Rosélia</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gulpin.html">Gloupti</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/swalot.html">Avaltout</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/carvanha.html">Carvanha</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sharpedo.html">Sharpedo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wailmer.html">Wailmer</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wailord.html">Wailord</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/numel.html">Chamallot</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/camerupt.html">Camérupt</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/torkoal.html">Chartor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/spoink.html">Spoink</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/grumpig.html">Groret</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/spinda.html">Spinda</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/trapinch.html">Kraknoix</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vibrava.html">Vibraninf</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/flygon.html">Libégon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cacnea.html">Cacnea</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cacturne.html">Cacturne</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/swablu.html">Tylton</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/altaria.html">Altaria</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zangoose.html">Mangriff</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/seviper.html">Séviper</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lunatone.html">Séléroc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/solrock.html">Solaroc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/barboach.html">Barloche</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/whiscash.html">Barbicha</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/corphish.html">Écrapince</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/crawdaunt.html">Colhomard</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/baltoy.html">Balbuto</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/claydol.html">Kaorine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lileep.html">Lilia</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cradily.html">Vacilys</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/anorith.html">Anorith</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/armaldo.html">Armaldo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/feebas.html">Barpau</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/milotic.html">Milobellus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/castform.html">Morphéo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kecleon.html">Kecleon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shuppet.html">Polichombr</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/banette.html">Branette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/duskull.html">Skelénox</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dusclops.html">Téraclope</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tropius.html">Tropius</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chimecho.html">Éoko</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/absol.html">Absol</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wynaut.html">Okéoké</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/snorunt.html">Stalgamin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/glalie.html">Oniglali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/spheal.html">Obalie</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sealeo.html">Phogleur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/walrein.html">Kaimorse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/clamperl.html">Coquiperl</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/huntail.html">Serpang</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gorebyss.html">Rosabyss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/relicanth.html">Relicanth</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/luvdisc.html">Lovdisc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bagon.html">Draby</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shelgon.html">Drackhaus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/salamence.html">Drattak</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/beldum.html">Terhal</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/metang.html">Métang</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/metagross.html">Métalosse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/regirock.html">Regirock</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/regice.html">Regice</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/registeel.html">Registeel</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/latias.html">Latias</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/latios.html">Latios</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kyogre.html">Kyogre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/groudon.html">Groudon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rayquaza.html">Rayquaza</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/jirachi.html">Jirachi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/deoxys-normal.html">Deoxys</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/turtwig.html">Tortipouss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/grotle.html">Boskara</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/torterra.html">Torterra</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chimchar.html">Ouisticram</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/monferno.html">Chimpenfeu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/infernape.html">Simiabraz</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/piplup.html">Tiplouf</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/prinplup.html">Prinplouf</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/empoleon.html">Pingoléon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/starly.html">Étourmi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/staravia.html">Étourvol</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/staraptor.html">Étouraptor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bidoof.html">Keunotor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bibarel.html">Castorno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kricketot.html">Crikzik</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kricketune.html">Mélokrik</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shinx.html">Lixy</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/luxio.html">Luxio</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/luxray.html">Luxray</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/budew.html">Rozbouton</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/roserade.html">Roserade</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cranidos.html">Kranidos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rampardos.html">Charkos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shieldon.html">Dinoclier</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bastiodon.html">Bastiodon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/burmy.html">Cheniti</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wormadam-plant.html">Cheniselle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mothim.html">Papilord</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/combee.html">Apitrini</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vespiquen.html">Apireine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pachirisu.html">Pachirisu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/buizel.html">Mustébouée</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/floatzel.html">Mustéflott</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cherubi.html">Ceribou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cherrim.html">Ceriflor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shellos.html">Sancoki</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gastrodon.html">Tritosor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ambipom.html">Capidextre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/drifloon.html">Baudrive</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/drifblim.html">Grodrive</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/buneary.html">Laporeille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lopunny.html">Lockpin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mismagius.html">Magirêve</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/honchkrow.html">Corboss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/glameow.html">Chaglam</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/purugly.html">Chaffreux</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chingling.html">Korillon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/stunky.html">Moufouette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/skuntank.html">Moufflair</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bronzor.html">Archéomire</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bronzong.html">Archéodong</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bonsly.html">Manzaï</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mime-jr.html">Mime Jr.</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/happiny.html">Ptiravi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chatot.html">Pijako</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/spiritomb.html">Spiritomb</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gible.html">Griknot</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gabite.html">Carmache</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/garchomp.html">Carchacrok</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/munchlax.html">Goinfrex</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/riolu.html">Riolu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lucario.html">Lucario</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hippopotas.html">Hippopotas</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hippowdon.html">Hippodocus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/skorupi.html">Rapion</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/drapion.html">Drascore</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/croagunk.html">Cradopaud</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/toxicroak.html">Coatox</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/carnivine.html">Vortente</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/finneon.html">Écayon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lumineon.html">Luminéon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mantyke.html">Babimanta</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/snover.html">Blizzi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/abomasnow.html">Blizzaroi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/weavile.html">Dimoret</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/magnezone.html">Magnézone</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lickilicky.html">Coudlangue</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rhyperior.html">Rhinastoc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tangrowth.html">Bouldeneu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/electivire.html">Élekable</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/magmortar.html">Maganon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/togekiss.html">Togekiss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/yanmega.html">Yanmega</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/leafeon.html">Phyllali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/glaceon.html">Givrali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gliscor.html">Scorvol</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mamoswine.html">Mammochon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/porygon-z.html">Porygon-Z</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gallade.html">Gallame</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/probopass.html">Tarinorme</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dusknoir.html">Noctunoir</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/froslass.html">Momartik</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rotom.html">Motisma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/uxie.html">Créhelf</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mesprit.html">Créfollet</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/azelf.html">Créfadet</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dialga.html">Dialga</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/palkia.html">Palkia</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/heatran.html">Heatran</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/regigigas.html">Regigigas</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/giratina-altered.html">Giratina</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cresselia.html">Cresselia</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/phione.html">Phione</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/manaphy.html">Manaphy</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/darkrai.html">Darkrai</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shaymin-land.html">Shaymin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/arceus.html">Arceus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/victini.html">Victini</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/snivy.html">Vipélierre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/servine.html">Lianaja</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/serperior.html">Majaspic</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tepig.html">Gruikui</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pignite.html">Grotichon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/emboar.html">Roitiflam</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/oshawott.html">Moustillon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dewott.html">Mateloutre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/samurott.html">Clamiral</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/patrat.html">Ratentif</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/watchog.html">Miradar</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lillipup.html">Ponchiot</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/herdier.html">Ponchien</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/stoutland.html">Mastouffe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/purrloin.html">Chacripan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/liepard.html">Léopardus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pansage.html">Feuillajou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/simisage.html">Feuiloutan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pansear.html">Flamajou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/simisear.html">Flamoutan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/panpour.html">Flotajou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/simipour.html">Flotoutan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/munna.html">Munna</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/musharna.html">Mushana</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pidove.html">Poichigeon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tranquill.html">Colombeau</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/unfezant.html">Déflaisan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/blitzle.html">Zébibron</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zebstrika.html">Zéblitz</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/roggenrola.html">Nodulithe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/boldore.html">Géolithe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gigalith.html">Gigalithe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/woobat.html">Chovsourir</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/swoobat.html">Rhinolove</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/drilbur.html">Rototaupe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/excadrill.html">Minotaupe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/audino.html">Nanméouïe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/timburr.html">Charpenti</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gurdurr.html">Ouvrifier</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/conkeldurr.html">Bétochef</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tympole.html">Tritonde</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/palpitoad.html">Batracné</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/seismitoad.html">Crapustule</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/throh.html">Judokrak</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sawk.html">Karaclée</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sewaddle.html">Larveyette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/swadloon.html">Couverdure</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/leavanny.html">Manternel</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/venipede.html">Venipatte</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/whirlipede.html">Scobolide</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/scolipede.html">Brutapode</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cottonee.html">Doudouvet</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/whimsicott.html">Farfaduvet</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/petilil.html">Chlorobule</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lilligant.html">Fragilady</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/basculin-red-striped.html">Bargantua</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sandile.html">Mascaïman</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/krokorok.html">Escroco</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/krookodile.html">Crocorible</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/darumaka.html">Darumarond</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/darmanitan-standard.html">Darumacho</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/maractus.html">Maracachi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dwebble.html">Crabicoque</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/crustle.html">Crabaraque</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/scraggy.html">Baggiguane</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/scrafty.html">Baggaïd</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sigilyph.html">Cryptéro</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/yamask.html">Tutafeh</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cofagrigus.html">Tutankafer</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tirtouga.html">Carapagos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/carracosta.html">Mégapagos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/archen.html">Arkéapti</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/archeops.html">Aéroptéryx</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/trubbish.html">Miamiasme</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/garbodor.html">Miasmax</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zorua.html">Zorua</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zoroark.html">Zoroark</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minccino.html">Chinchidou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cinccino.html">Pashmilla</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gothita.html">Scrutella</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gothorita.html">Mesmérella</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gothitelle.html">Sidérella</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/solosis.html">Nucléos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/duosion.html">Méios</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/reuniclus.html">Symbios</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ducklett.html">Couaneton</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/swanna.html">Lakmécygne</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vanillite.html">Sorbébé</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vanillish.html">Sorboul</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vanilluxe.html">Sorbouboul</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/deerling.html">Vivaldaim</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sawsbuck.html">Haydaim</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/emolga.html">Emolga</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/karrablast.html">Carabing</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/escavalier.html">Lançargot</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/foongus.html">Trompignon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/amoonguss.html">Gaulet</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/frillish.html">Viskuse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/jellicent.html">Moyade</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/alomomola.html">Mamanbo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/joltik.html">Statitik</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/galvantula.html">Mygavolt</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ferroseed.html">Grindur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ferrothorn.html">Noacier</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/klink.html">Tic</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/klang.html">Clic</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/klinklang.html">Cliticlic</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tynamo.html">Anchwatt</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/eelektrik.html">Lampéroie</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/eelektross.html">Ohmassacre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/elgyem.html">Lewsor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/beheeyem.html">Neitram</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/litwick.html">Funécire</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lampent.html">Mélancolux</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chandelure.html">Lugulabre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/axew.html">Coupenotte</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/fraxure.html">Incisache</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/haxorus.html">Tranchodon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cubchoo.html">Polarhume</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/beartic.html">Polagriffe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cryogonal.html">Hexagel</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shelmet.html">Escargaume</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/accelgor.html">Limaspeed</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/stunfisk.html">Limonde</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mienfoo.html">Kungfouine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mienshao.html">Shaofouine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/druddigon.html">Drakkarmin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/golett.html">Gringolem</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/golurk.html">Golemastoc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pawniard.html">Scalpion</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bisharp.html">Scalproie</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bouffalant.html">Frison</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rufflet.html">Furaiglon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/braviary.html">Gueriaigle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vullaby.html">Vostourno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mandibuzz.html">Vaututrice</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/heatmor.html">Aflamanoir</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/durant.html">Fermite</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/deino.html">Solochi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zweilous.html">Diamat</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hydreigon.html">Trioxhydre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/larvesta.html">Pyronille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/volcarona.html">Pyrax</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cobalion.html">Cobaltium</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/terrakion.html">Terrakium</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/virizion.html">Viridium</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tornadus-incarnate.html">Boréas</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/thundurus-incarnate.html">Fulguris</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/reshiram.html">Reshiram</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zekrom.html">Zekrom</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/landorus-incarnate.html">Démétéros</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kyurem.html">Kyurem</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/keldeo-ordinary.html">Keldeo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meloetta-aria.html">Meloetta</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/genesect.html">Genesect</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chespin.html">Marisson</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/quilladin.html">Boguérisse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chesnaught.html">Blindépique</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/fennekin.html">Feunnec</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/braixen.html">Roussil</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/delphox.html">Goupelin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/froakie.html">Grenousse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/frogadier.html">Croâporal</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/greninja.html">Amphinobi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bunnelby.html">Sapereau</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/diggersby.html">Excavarenne</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/fletchling.html">Passerouge</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/fletchinder.html">Braisillon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/talonflame.html">Flambusard</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/scatterbug.html">Lépidonille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/spewpa.html">Pérégrain</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vivillon.html">Prismillon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/litleo.html">Hélionceau</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pyroar.html">Némélios</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/flabebe.html">Flabébé</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/floette.html">Floette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/florges.html">Florges</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/skiddo.html">Cabriolaine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gogoat.html">Chevroum</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pancham.html">Pandespiègle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pangoro.html">Pandarbare</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/furfrou.html">Couafarel</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/espurr.html">Psystigri</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meowstic-male.html">Mistigrix</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/honedge.html">Monorpale</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/doublade.html">Dimoclès</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/aegislash-shield.html">Exagide</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/spritzee.html">Fluvetin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/aromatisse.html">Cocotine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/swirlix.html">Sucroquin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slurpuff.html">Cupcanaille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/inkay.html">Sepiatop</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/malamar.html">Sepiatroce</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/binacle.html">Opermine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/barbaracle.html">Golgopathe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/skrelp.html">Venalgue</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dragalge.html">Kravarech</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/clauncher.html">Flingouste</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/clawitzer.html">Gamblast</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/helioptile.html">Galvaran</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/heliolisk.html">Iguolta</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tyrunt.html">Ptyranidur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tyrantrum.html">Rexillius</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/amaura.html">Amagara</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/aurorus.html">Dragmara</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sylveon.html">Nymphali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hawlucha.html">Brutalibré</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dedenne.html">Dedenne</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/carbink.html">Strassie</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/goomy.html">Mucuscule</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sliggoo.html">Colimucus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/goodra.html">Muplodocus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/klefki.html">Trousselin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/phantump.html">Brocélôme</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/trevenant.html">Desséliande</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pumpkaboo-average.html">Pitrouille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gourgeist-average.html">Banshitrouye</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bergmite.html">Grelaçon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/avalugg.html">Séracrawl</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/noibat.html">Sonistrelle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/noivern.html">Bruyverne</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/xerneas.html">Xerneas</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/yveltal.html">Yveltal</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zygarde-50.html">Zygarde</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/diancie.html">Diancie</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hoopa.html">Hoopa</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/volcanion.html">Volcanion</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rowlet.html">Brindibou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dartrix.html">Efflèche</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/decidueye.html">Archéduc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/litten.html">Flamiaou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/torracat.html">Matoufeu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/incineroar.html">Félinferno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/popplio.html">Otaquin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/brionne.html">Otarlette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/primarina.html">Oratoria</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikipek.html">Picassaut</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/trumbeak.html">Piclairon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/toucannon.html">Bazoucan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/yungoos.html">Manglouton</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gumshoos.html">Argouste</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/grubbin.html">Larvibule</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/charjabug.html">Chrysapile</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vikavolt.html">Lucanon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/crabrawler.html">Crabagarre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/crabominable.html">Crabominable</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/oricorio-baile.html">Plumeline</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cutiefly.html">Bombydou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ribombee.html">Rubombelle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rockruff.html">Rocabot</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lycanroc-midday.html">Lougaroc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wishiwashi-solo.html">Froussardine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mareanie.html">Vorastérie</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/toxapex.html">Prédastérie</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mudbray.html">Tiboudet</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mudsdale.html">Bourrinos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dewpider.html">Araqua</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/araquanid.html">Tarenbulle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/fomantis.html">Mimantis</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lurantis.html">Floramantis</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/morelull.html">Spododo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shiinotic.html">Lampignon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/salandit.html">Tritox</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/salazzle.html">Malamandre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/stufful.html">Nounourson</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bewear.html">Chelours</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bounsweet.html">Croquine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/steenee.html">Candine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tsareena.html">Sucreine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/comfey.html">Guérilande</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/oranguru.html">Gouroutan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/passimian.html">Quartermac</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wimpod.html">Sovkipou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/golisopod.html">Sarmuraï</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sandygast.html">Bacabouh</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/palossand.html">Trépassable</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pyukumuku.html">Concombaffe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/type-null.html">Type:0</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/silvally.html">Silvallié</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-red-meteor.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/komala.html">Dodoala</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/turtonator.html">Boumata</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/togedemaru.html">Togedemaru</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mimikyu-disguised.html">Mimiqui</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/bruxish.html">Denticrisse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/drampa.html">Draïeul</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dhelmise.html">Sinistrail</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/jangmo-o.html">Bébécaille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hakamo-o.html">Écaïd</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kommo-o.html">Ékaïser</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tapu-koko.html">Tokorico</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tapu-lele.html">Tokopiyon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tapu-bulu.html">Tokotoro</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tapu-fini.html">Tokopisco</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cosmog.html">Cosmog</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cosmoem.html">Cosmovum</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/solgaleo.html">Solgaleo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lunala.html">Lunala</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nihilego.html">Zéroïd</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/buzzwole.html">Mouscoto</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pheromosa.html">Cancrelove</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/xurkitree.html">Câblifère</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/celesteela.html">Bamboiselle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kartana.html">Katagami</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/guzzlord.html">Engloutyran</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/necrozma.html">Necrozma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/magearna.html">Magearna</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/marshadow.html">Marshadow</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/poipole.html">Vémini</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/naganadel.html">Mandrillon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/stakataka.html">Ama-Ama</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/blacephalon.html">Pierroteknik</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zeraora.html">Zeraora</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meltan.html">Meltan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/melmetal.html">Melmetal</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/grookey.html">Ouistempo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/thwackey.html">Badabouin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rillaboom.html">Gorythmic</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/scorbunny.html">Flambino</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/raboot.html">Lapyro</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cinderace.html">Pyrobut</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sobble.html">Larméléon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/drizzile.html">Arrozard</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/inteleon.html">Lézargus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/skwovet.html">Rongourmand</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/greedent.html">Rongrigou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rookidee.html">Minisange</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/corvisquire.html">Bleuseille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/corviknight.html">Corvaillus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/blipbug.html">Larvadar</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dottler.html">Coléodôme</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/orbeetle.html">Astronelle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/nickit.html">Goupilou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/thievul.html">Roublenard</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gossifleur.html">Tournicoton</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/eldegoss.html">Blancoton</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wooloo.html">Moumouton</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dubwool.html">Moumouflon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/chewtle.html">Khélocrok</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/drednaw.html">Torgamord</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/yamper.html">Voltoutou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/boltund.html">Fulgudog</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rolycoly.html">Charbi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/carkol.html">Wagomine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/coalossal.html">Monthracite</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/applin.html">Verpom</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/flapple.html">Pomdrapi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/appletun.html">Dratatin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/silicobra.html">Dunaja</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sandaconda.html">Dunaconda</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cramorant.html">Nigosier</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/arrokuda.html">Embrochet</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/barraskewda.html">Hastacuda</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/toxel.html">Toxizap</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/toxtricity-amped.html">Salarsen</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sizzlipede.html">Grillepattes</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/centiskorch.html">Scolocendre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/clobbopus.html">Poulpaf</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/grapploct.html">Krakos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sinistea.html">Théffroi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/polteageist.html">Polthégeist</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hatenna.html">Bibichut</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hattrem.html">Chapotus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hatterene.html">Sorcilence</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/impidimp.html">Grimalin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/morgrem.html">Fourbelin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/grimmsnarl.html">Angoliath</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/obstagoon.html">Ixon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/perrserker.html">Berserkatt</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cursola.html">Corayôme</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sirfetchd.html">Palarticho</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mr-rime.html">M. Glaquette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/runerigus.html">Tutétékri</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/milcery.html">Crèmy</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/alcremie.html">Charmilly</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/falinks.html">Hexadron</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pincurchin.html">Wattapik</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/snom.html">Frissonille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/frosmoth.html">Beldeneige</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/stonjourner.html">Dolman</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/eiscue-ice.html">Bekaglaçon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/indeedee-male.html">Wimessir</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/morpeko-full-belly.html">Morpeko</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cufant.html">Charibari</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/copperajah.html">Pachyradjah</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dracozolt.html">Galvagon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/arctozolt.html">Galvagla</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dracovish.html">Hydragon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/arctovish.html">Hydragla</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/duraludon.html">Duralugon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dreepy.html">Fantyrm</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/drakloak.html">Dispareptil</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dragapult.html">Lanssorien</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zacian.html">Zacian</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zamazenta.html">Zamazenta</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/eternatus.html">Éthernatos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kubfu.html">Wushours</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/urshifu-single-strike.html">Shifours</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zarude.html">Zarude</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/regieleki.html">Regieleki</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/regidrago.html">Regidrago</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/glastrier.html">Blizzeval</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/spectrier.html">Spectreval</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/calyrex.html">Sylveroy</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wyrdeer.html">Cerbyllin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kleavor.html">Hachécateur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ursaluna.html">Ursaking</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/basculegion-male.html">Paragruel</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sneasler.html">Farfurex</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/overqwil.html">Qwilpik</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/enamorus-incarnate.html">Amovénus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/deoxys-attack.html">Deoxys</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/deoxys-defense.html">Deoxys</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/deoxys-speed.html">Deoxys</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wormadam-sandy.html">Cheniselle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wormadam-trash.html">Cheniselle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/shaymin-sky.html">Shaymin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/giratina-origin.html">Giratina</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rotom-heat.html">Motisma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rotom-wash.html">Motisma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rotom-frost.html">Motisma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rotom-fan.html">Motisma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rotom-mow.html">Motisma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/castform-sunny.html">Morphéo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/castform-rainy.html">Morphéo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/castform-snowy.html">Morphéo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/basculin-blue-striped.html">Bargantua</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/darmanitan-zen.html">Darumacho</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meloetta-pirouette.html">Meloetta</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tornadus-therian.html">Boréas</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/thundurus-therian.html">Fulguris</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/landorus-therian.html">Démétéros</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kyurem-black.html">Kyurem</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kyurem-white.html">Kyurem</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/keldeo-resolute.html">Keldeo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meowstic-female.html">Mistigrix</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/aegislash-blade.html">Exagide</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pumpkaboo-small.html">Pitrouille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pumpkaboo-large.html">Pitrouille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pumpkaboo-super.html">Pitrouille</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gourgeist-small.html">Banshitrouye</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gourgeist-large.html">Banshitrouye</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gourgeist-super.html">Banshitrouye</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/venusaur-mega.html">Florizarre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/charizard-mega-x.html">Dracaufeu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/charizard-mega-y.html">Dracaufeu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/blastoise-mega.html">Tortank</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/alakazam-mega.html">Alakazam</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gengar-mega.html">Ectoplasma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kangaskhan-mega.html">Kangourex</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pinsir-mega.html">Scarabrute</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gyarados-mega.html">Léviator</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/aerodactyl-mega.html">Ptéra</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mewtwo-mega-x.html">Mewtwo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mewtwo-mega-y.html">Mewtwo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ampharos-mega.html">Pharamp</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/scizor-mega.html">Cizayox</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/heracross-mega.html">Scarhino</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/houndoom-mega.html">Démolosse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/tyranitar-mega.html">Tyranocif</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/blaziken-mega.html">Braségali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gardevoir-mega.html">Gardevoir</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mawile-mega.html">Mysdibule</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/aggron-mega.html">Galeking</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/medicham-mega.html">Charmina</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/manectric-mega.html">Élecsprint</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/banette-mega.html">Branette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/absol-mega.html">Absol</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/garchomp-mega.html">Carchacrok</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lucario-mega.html">Lucario</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/abomasnow-mega.html">Blizzaroi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/floette-eternal.html">Floette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/latias-mega.html">Latias</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/latios-mega.html">Latios</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/swampert-mega.html">Laggron</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sceptile-mega.html">Jungko</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sableye-mega.html">Ténéfix</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/altaria-mega.html">Altaria</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gallade-mega.html">Gallame</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/audino-mega.html">Nanméouïe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sharpedo-mega.html">Sharpedo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slowbro-mega.html">Flagadoss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/steelix-mega.html">Steelix</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pidgeot-mega.html">Roucarnage</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/glalie-mega.html">Oniglali</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/diancie-mega.html">Diancie</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/metagross-mega.html">Métalosse</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kyogre-primal.html">Kyogre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/groudon-primal.html">Groudon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rayquaza-mega.html">Rayquaza</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-rock-star.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-belle.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-pop-star.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-phd.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-libre.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-cosplay.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hoopa-unbound.html">Hoopa</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/camerupt-mega.html">Camérupt</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lopunny-mega.html">Lockpin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/salamence-mega.html">Drattak</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/beedrill-mega.html">Dardargnan</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rattata-alola.html">Rattata</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/raticate-alola.html">Rattatac</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/raticate-totem-alola.html">Rattatac</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-original-cap.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-hoenn-cap.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-sinnoh-cap.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-unova-cap.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-kalos-cap.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-alola-cap.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/raichu-alola.html">Raichu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sandshrew-alola.html">Sabelette</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sandslash-alola.html">Sablaireau</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vulpix-alola.html">Goupix</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ninetales-alola.html">Feunard</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/diglett-alola.html">Taupiqueur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dugtrio-alola.html">Triopikeur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meowth-alola.html">Miaouss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/persian-alola.html">Persian</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/geodude-alola.html">Racaillou</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/graveler-alola.html">Gravalanch</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/golem-alola.html">Grolem</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/grimer-alola.html">Tadmorv</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/muk-alola.html">Grotadmorv</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/exeggutor-alola.html">Noadkoko</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/marowak-alola.html">Ossatueur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/greninja-battle-bond.html">Amphinobi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/greninja-ash.html">Amphinobi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zygarde-10-power-construct.html">Zygarde</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zygarde-50-power-construct.html">Zygarde</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zygarde-complete.html">Zygarde</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gumshoos-totem.html">Argouste</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/vikavolt-totem.html">Lucanon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/oricorio-pom-pom.html">Plumeline</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/oricorio-pau.html">Plumeline</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/oricorio-sensu.html">Plumeline</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lycanroc-midnight.html">Lougaroc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/wishiwashi-school.html">Froussardine</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lurantis-totem.html">Floramantis</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/salazzle-totem.html">Malamandre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-orange-meteor.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-yellow-meteor.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-green-meteor.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-blue-meteor.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-indigo-meteor.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-violet-meteor.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-red.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-orange.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-yellow.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-green.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-blue.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-indigo.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/minior-violet.html">Météno</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mimikyu-busted.html">Mimiqui</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mimikyu-totem-disguised.html">Mimiqui</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mimikyu-totem-busted.html">Mimiqui</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kommo-o-totem.html">Ékaïser</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/magearna-original.html">Magearna</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-partner-cap.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/marowak-totem.html">Ossatueur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ribombee-totem.html">Rubombelle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rockruff-own-tempo.html">Rocabot</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lycanroc-dusk.html">Lougaroc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/araquanid-totem.html">Tarenbulle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/togedemaru-totem.html">Togedemaru</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/necrozma-dusk.html">Necrozma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/necrozma-dawn.html">Necrozma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/necrozma-ultra.html">Necrozma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-starter.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/eevee-starter.html">Évoli</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-world-cap.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meowth-galar.html">Miaouss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/ponyta-galar.html">Ponyta</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rapidash-galar.html">Galopa</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slowpoke-galar.html">Ramoloss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slowbro-galar.html">Flagadoss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/farfetchd-galar.html">Canarticho</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/weezing-galar.html">Smogogo</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/mr-mime-galar.html">M. Mime</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/articuno-galar.html">Artikodin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zapdos-galar.html">Électhor</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/moltres-galar.html">Sulfura</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/slowking-galar.html">Roigada</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/corsola-galar.html">Corayon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zigzagoon-galar.html">Zigzaton</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/linoone-galar.html">Linéon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/darumaka-galar.html">Darumarond</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/darmanitan-galar-standard.html">Darumacho</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/darmanitan-galar-zen.html">Darumacho</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/yamask-galar.html">Tutafeh</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/stunfisk-galar.html">Limonde</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zygarde-10.html">Zygarde</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cramorant-gulping.html">Nigosier</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cramorant-gorging.html">Nigosier</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/toxtricity-low-key.html">Salarsen</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/eiscue-noice.html">Bekaglaçon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/indeedee-female.html">Wimessir</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/morpeko-hangry.html">Morpeko</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zacian-crowned.html">Zacian</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zamazenta-crowned.html">Zamazenta</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/eternatus-eternamax.html">Éthernatos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/urshifu-rapid-strike.html">Shifours</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zarude-dada.html">Zarude</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/calyrex-ice.html">Sylveroy</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/calyrex-shadow.html">Sylveroy</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/venusaur-gmax.html">Florizarre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/charizard-gmax.html">Dracaufeu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/blastoise-gmax.html">Tortank</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/butterfree-gmax.html">Papilusion</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/pikachu-gmax.html">Pikachu</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/meowth-gmax.html">Miaouss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/machamp-gmax.html">Mackogneur</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/gengar-gmax.html">Ectoplasma</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/kingler-gmax.html">Krabboss</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lapras-gmax.html">Lokhlass</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/eevee-gmax.html">Évoli</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/snorlax-gmax.html">Ronflex</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/garbodor-gmax.html">Miasmax</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/melmetal-gmax.html">Melmetal</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/rillaboom-gmax.html">Gorythmic</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/cinderace-gmax.html">Pyrobut</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/inteleon-gmax.html">Lézargus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/corviknight-gmax.html">Corvaillus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/orbeetle-gmax.html">Astronelle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/drednaw-gmax.html">Torgamord</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/coalossal-gmax.html">Monthracite</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/flapple-gmax.html">Pomdrapi</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/appletun-gmax.html">Dratatin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sandaconda-gmax.html">Dunaconda</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/toxtricity-amped-gmax.html">Salarsen</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/centiskorch-gmax.html">Scolocendre</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/hatterene-gmax.html">Sorcilence</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/grimmsnarl-gmax.html">Angoliath</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/alcremie-gmax.html">Charmilly</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/copperajah-gmax.html">Pachyradjah</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/duraludon-gmax.html">Duralugon</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/urshifu-single-strike-gmax.html">Shifours</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/urshifu-rapid-strike-gmax.html">Shifours</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/toxtricity-low-key-gmax.html">Salarsen</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/growlithe-hisui.html">Caninos</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/arcanine-hisui.html">Arcanin</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/voltorb-hisui.html">Voltorbe</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/electrode-hisui.html">Électrode</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/typhlosion-hisui.html">Typhlosion</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/qwilfish-hisui.html">Qwilfish</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sneasel-hisui.html">Farfuret</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/samurott-hisui.html">Clamiral</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/lilligant-hisui.html">Fragilady</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zorua-hisui.html">Zorua</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/zoroark-hisui.html">Zoroark</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/braviary-hisui.html">Gueriaigle</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/sliggoo-hisui.html">Colimucus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/goodra-hisui.html">Muplodocus</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/avalugg-hisui.html">Séracrawl</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/decidueye-hisui.html">Archéduc</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/dialga-origin.html">Dialga</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/palkia-origin.html">Palkia</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/basculin-white-striped.html">Bargantua</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/basculegion-female.html">Paragruel</a>
+    			</li>
+			<li>
+    				  <a href="pokemons/enamorus-therian.html">Amovénus</a>
+    			</li>
+	</ul>
+    </div>  </div>
+</body>
+</html>
