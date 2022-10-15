@@ -12,6 +12,7 @@
   <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AADq/wAPYwAAAP8iADTWGAD/UQAA/zsFAP/sPQAAAP8AAP/3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmZmQAAAAmZmZmZmZmZmSIpk5kAkACZmZkzOZmZmZl3eZOZZmZmmZmZmZlmZmaZGqoRGZmZmZkaqhEZREREmRAQERlERESZERERGURERJmZmZmZmZmZmYiZmZmZmZAJiJklWQAAAAmZmZmZAAAAD//wAA//8AAAB/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAB/AAAAfwAA" rel="icon" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link href="/rustedex/assets/css/rustedex.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
@@ -26,64 +27,64 @@
 		<table class="table">
   			<tbody>
   				<tr>
-  					<th scope="row">Nom</th>
-  			    	<td>Mackogneur (anglais: <strong>Machamp</strong>, japonais: <strong>カイリキー Kairiky</strong>)</td>
+  					<th scope="row">Name</th>
+  			    	<td>Machamp (french: <strong>Mackogneur</strong>, japonais: <strong>カイリキー Kairiky</strong>)</td>
   			  	</tr>
                 <tr>
   			    	<th scope="row">Types</th>
                     <td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>  			  	</tr>
                 <tr>
-  			    	<th scope="row">Catégorie</th>
-  			    	<td>Pokémon Colosse</td>
+  			    	<th scope="row">Genus</th>
+  			    	<td>Superpower Pokémon</td>
   			  	</tr>
                 <tr>
-					<th scope="row">Taille</th>
+					<th scope="row">Height</th>
 					<td>1.6      m</td>
 				</tr>
 				<tr>
-					<th scope="row">Poids</th>
+					<th scope="row">Weight</th>
 					<td>130      kg</td>
 				</tr>
                 <tr>
-					<th scope="row">Talents</th>
+					<th scope="row">Abilities</th>
 					<td>
 						<ol>
-							<li>Cran</li><li>Annule Garde</li><li>Impassible</li>
+							<li>Guts</li><li>No Guard</li><li>Steadfast</li>
 						</ol>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Groupes d'Œuf</th>
+					<th scope="row">Egg groups</th>
 					<td>
 						<ol>
-							<li>Humanoïde</li>
+							<li>Human-Like</li>
 						</ol>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Éclosion</th>
+					<th scope="row">Hatch time</th>
 					<td>5355 pas</td>
 				</tr>
 				<tr>
-					<th scope="row">Points d'effort</th>
+					<th scope="row">Effort points</th>
 					<td>
 						<ul>
-							<li>+3 Attaque</li>
+							<li>+3 Attack</li>
 						</ul>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Points d'expérience</th>
+					<th scope="row">Base experience</th>
 					<td>253 exp.</td>
 				</tr>
 				<tr>
-					<th scope="row">Expérience au niveau 100</th>
+					<th scope="row">Experience at level 100</th>
 					<td>1 059 860 exp.</td>
 				</tr>
 				<tr>
-					<th scope="row">Sexe</th>
+					<th scope="row">Gender ratio</th>
 					<td>
-					25.0% femelle, 75.0% mâle 
+					25.0% female, 75.0% male 
 					<div class="progress mw-75">
 						<div class="progress-bar bg-female" role="progressbar" style="width: 25.0%" aria-valuenow="25.0" aria-valuemin="0" aria-valuemax="100"></div>
   						<div class="progress-bar bg-male" role="progressbar" style="width: 75.0%" aria-valuenow="75.0" aria-valuemin="25.0" aria-valuemax="100"></div>
@@ -91,18 +92,283 @@
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Couleur</th>
-					<td>Gris</td>
+					<th scope="row">Color</th>
+					<td>Gray</td>
 				</tr>
 				<tr>
-					<th scope="row">Taux de capture</th>
+					<th scope="row">Capture rate</th>
 					<td>45</td>
 				</tr>
 			</tbody>
 		</table>
-      </div>
+	  </div>
     </div>    
   </div>
-</div>  </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header">
+        <div class="dropdown">
+            <select id="generationSelect" class="form-select w-auto" aria-label="Choose a generation">
+                    <option value="#collapse-generation-i">Generation I</option>
+                    <option value="#collapse-generation-ii">Generation II</option>
+                    <option value="#collapse-generation-iii">Generation III</option>
+                    <option value="#collapse-generation-iv">Generation IV</option>
+                    <option value="#collapse-generation-v">Generation V</option>
+                    <option value="#collapse-generation-vi">Generation VI</option>
+                    <option value="#collapse-generation-vii">Generation VII</option>
+                    <option value="#collapse-generation-viii">Generation VIII</option>
+            </select>
+        </div>
+    </div>
+    <div id="descriptionsContainer" class="card-body">
+                <div class="collapse" id="collapse-generation-i">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Red</h5>
+                                </div>
+                                <p class="mb-1">Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Blue</h5>
+                                </div>
+                                <p class="mb-1">Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Yellow</h5>
+                                </div>
+                                <p class="mb-1">One arm alone can move mountains. Using all four arms, this POKéMON fires off awesome punches.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-ii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Gold</h5>
+                                </div>
+                                <p class="mb-1">It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Silver</h5>
+                                </div>
+                                <p class="mb-1">It uses its four powerful arms to pin the limbs of its foe, then throws the victim over the horizon.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Crystal</h5>
+                                </div>
+                                <p class="mb-1">With four arms that react more quickly than it can think, it can execute many punches at once.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-iii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ruby</h5>
+                                </div>
+                                <p class="mb-1">MACHAMP has the power to hurl anything aside. However, trying to do any work requiring care and dexterity causes its arms to get tangled. This POKéMON tends to leap into action before it thinks.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sapphire</h5>
+                                </div>
+                                <p class="mb-1">MACHAMP is known as the POKéMON that has mastered every kind of martial arts. If it grabs hold of the foe with its four arms, the battle is all but over. The hapless foe is thrown far over the horizon.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Emerald</h5>
+                                </div>
+                                <p class="mb-1">It is impossible to defend against punches and chops doled out by its four arms. Its fighting spirit flares up when it faces a tough opponent.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">FireRed</h5>
+                                </div>
+                                <p class="mb-1">Its four ruggedly developed arms can launch a flurry of 1,000 punches in just two seconds.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">LeafGreen</h5>
+                                </div>
+                                <p class="mb-1">Its superpowerful punches are said to knock the victim flying clear over the horizon.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-iv">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Diamond</h5>
+                                </div>
+                                <p class="mb-1">It punches with its four arms at blinding speed. It can launch 1,000 punches in two seconds.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Pearl</h5>
+                                </div>
+                                <p class="mb-1">It can knock a train flying with a punch. However, it is terrible at delicate work using its fingers.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Platinum</h5>
+                                </div>
+                                <p class="mb-1">Its four muscled arms slam foes with powerful punches and chops at blinding speed.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">HeartGold</h5>
+                                </div>
+                                <p class="mb-1">It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">SoulSilver</h5>
+                                </div>
+                                <p class="mb-1">It uses its four powerful arms to pin the limbs of its foe, then throws the victim over the horizon.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-v">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Black</h5>
+                                </div>
+                                <p class="mb-1">Its four muscled arms slam foes with powerful punches and chops at blinding speed.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">White</h5>
+                                </div>
+                                <p class="mb-1">Its four muscled arms slam foes with powerful punches and chops at blinding speed.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Black 2</h5>
+                                </div>
+                                <p class="mb-1">Its four muscled arms slam foes with powerful punches and chops at blinding speed.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">White 2</h5>
+                                </div>
+                                <p class="mb-1">Its four muscled arms slam foes with powerful punches and chops at blinding speed.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-vi">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">X</h5>
+                                </div>
+                                <p class="mb-1">Its four ruggedly developed arms can launch a flurry of 1,000 punches in just two seconds.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Y</h5>
+                                </div>
+                                <p class="mb-1">It uses its four powerful arms to pin the limbs of its foe, then throws the victim over the horizon.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Omega Ruby</h5>
+                                </div>
+                                <p class="mb-1">Machamp has the power to hurl anything aside. However, trying to do any work requiring care and dexterity causes its arms to get tangled. This Pokémon tends to leap into action before it thinks.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Alpha Sapphire</h5>
+                                </div>
+                                <p class="mb-1">Machamp is known as the Pokémon that has mastered every kind of martial arts. If it grabs hold of the foe with its four arms, the battle is all but over. The hapless foe is thrown far over the horizon.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-vii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sun</h5>
+                                </div>
+                                <p class="mb-1">It unleashes megaton-level punches that send opponents flying clear over the horizon.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Moon</h5>
+                                </div>
+                                <p class="mb-1">It can lift heavy loads with the greatest of ease. It can even heft dump trucks. But its clumsy fingers prevent it from doing any precision work.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ultra Sun</h5>
+                                </div>
+                                <p class="mb-1">It grasps its opponents with its four arms and twists them up in an intricate hold. People call it “the Machamp special.”</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ultra Moon</h5>
+                                </div>
+                                <p class="mb-1">With four arms, it can attack and defend simultaneously. It’s said to have mastered every martial art in the world.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Let&#x27;s Go, Pikachu!</h5>
+                                </div>
+                                <p class="mb-1">One arm alone can move mountains. Using all four arms, this Pokémon fires off awesome punches.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Let&#x27;s Go, Eevee!</h5>
+                                </div>
+                                <p class="mb-1">One arm alone can move mountains. Using all four arms, this Pokémon fires off awesome punches.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-viii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sword</h5>
+                                </div>
+                                <p class="mb-1">It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Shield</h5>
+                                </div>
+                                <p class="mb-1">With four arms that react more quickly than it can think, it can execute many punches at once.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Legends: Arceus</h5>
+                                </div>
+                                <p class="mb-1">In close combat, its four arms afford it offensive and defensive supremacy. In but a blink, this valiant Pokémon can overwhelm its foes with more than 1,000 blows from its fists.</p>
+                            </li>
+                    </ul>
+                </div>
+    </div>
+</div>
+
+<script>
+    $( document ).ready(function() {
+    $("#generationSelect").on('change', function(e){
+        var showedDescription = $('#descriptionsContainer .collapse\\.show');
+        showedDescription.removeClass('collapse.show');
+        showedDescription.addClass('collapse');
+        var targetDescription = $($(this).val());
+        targetDescription.removeClass('collapse');
+        targetDescription.addClass('collapse.show');
+    });
+
+    var firstDescription = $("#descriptionsContainer .collapse").first();
+    firstDescription.removeClass('collapse');
+    firstDescription.addClass('collapse.show');
+});
+</script>  </div>
 </body>
 </html>

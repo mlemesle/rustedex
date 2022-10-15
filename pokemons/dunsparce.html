@@ -12,6 +12,7 @@
   <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AADq/wAPYwAAAP8iADTWGAD/UQAA/zsFAP/sPQAAAP8AAP/3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmZmQAAAAmZmZmZmZmZmSIpk5kAkACZmZkzOZmZmZl3eZOZZmZmmZmZmZlmZmaZGqoRGZmZmZkaqhEZREREmRAQERlERESZERERGURERJmZmZmZmZmZmYiZmZmZmZAJiJklWQAAAAmZmZmZAAAAD//wAA//8AAAB/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAB/AAAAfwAA" rel="icon" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link href="/rustedex/assets/css/rustedex.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
@@ -26,64 +27,64 @@
 		<table class="table">
   			<tbody>
   				<tr>
-  					<th scope="row">Nom</th>
-  			    	<td>Insolourdo (anglais: <strong>Dunsparce</strong>, japonais: <strong>ノコッチ Nokocchi</strong>)</td>
+  					<th scope="row">Name</th>
+  			    	<td>Dunsparce (french: <strong>Insolourdo</strong>, japonais: <strong>ノコッチ Nokocchi</strong>)</td>
   			  	</tr>
                 <tr>
   			    	<th scope="row">Types</th>
                     <td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>  			  	</tr>
                 <tr>
-  			    	<th scope="row">Catégorie</th>
-  			    	<td>Pokémon Serpent</td>
+  			    	<th scope="row">Genus</th>
+  			    	<td>Land Snake Pokémon</td>
   			  	</tr>
                 <tr>
-					<th scope="row">Taille</th>
+					<th scope="row">Height</th>
 					<td>1.5      m</td>
 				</tr>
 				<tr>
-					<th scope="row">Poids</th>
+					<th scope="row">Weight</th>
 					<td>14       kg</td>
 				</tr>
                 <tr>
-					<th scope="row">Talents</th>
+					<th scope="row">Abilities</th>
 					<td>
 						<ol>
-							<li>Sérénité</li><li>Fuite</li><li>Phobique</li>
+							<li>Serene Grace</li><li>Run Away</li><li>Rattled</li>
 						</ol>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Groupes d'Œuf</th>
+					<th scope="row">Egg groups</th>
 					<td>
 						<ol>
-							<li>Terrestre</li>
+							<li>Field</li>
 						</ol>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Éclosion</th>
+					<th scope="row">Hatch time</th>
 					<td>5355 pas</td>
 				</tr>
 				<tr>
-					<th scope="row">Points d'effort</th>
+					<th scope="row">Effort points</th>
 					<td>
 						<ul>
-							<li>+1 PV</li>
+							<li>+1 HP</li>
 						</ul>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Points d'expérience</th>
+					<th scope="row">Base experience</th>
 					<td>145 exp.</td>
 				</tr>
 				<tr>
-					<th scope="row">Expérience au niveau 100</th>
+					<th scope="row">Experience at level 100</th>
 					<td>1 000 000 exp.</td>
 				</tr>
 				<tr>
-					<th scope="row">Sexe</th>
+					<th scope="row">Gender ratio</th>
 					<td>
-					50.0% femelle, 50.0% mâle 
+					50.0% female, 50.0% male 
 					<div class="progress mw-75">
 						<div class="progress-bar bg-female" role="progressbar" style="width: 50.0%" aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100"></div>
   						<div class="progress-bar bg-male" role="progressbar" style="width: 50.0%" aria-valuenow="50.0" aria-valuemin="50.0" aria-valuemax="100"></div>
@@ -91,18 +92,230 @@
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Couleur</th>
-					<td>Jaune</td>
+					<th scope="row">Color</th>
+					<td>Yellow</td>
 				</tr>
 				<tr>
-					<th scope="row">Taux de capture</th>
+					<th scope="row">Capture rate</th>
 					<td>190</td>
 				</tr>
 			</tbody>
 		</table>
-      </div>
+	  </div>
     </div>    
   </div>
-</div>  </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header">
+        <div class="dropdown">
+            <select id="generationSelect" class="form-select w-auto" aria-label="Choose a generation">
+                    <option value="#collapse-generation-ii">Generation II</option>
+                    <option value="#collapse-generation-iii">Generation III</option>
+                    <option value="#collapse-generation-iv">Generation IV</option>
+                    <option value="#collapse-generation-v">Generation V</option>
+                    <option value="#collapse-generation-vi">Generation VI</option>
+                    <option value="#collapse-generation-vii">Generation VII</option>
+                    <option value="#collapse-generation-viii">Generation VIII</option>
+            </select>
+        </div>
+    </div>
+    <div id="descriptionsContainer" class="card-body">
+                <div class="collapse" id="collapse-generation-ii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Gold</h5>
+                                </div>
+                                <p class="mb-1">When spotted, this POKéMON escapes backward by furi­ ously boring into the ground with its tail.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Silver</h5>
+                                </div>
+                                <p class="mb-1">If spotted, it es­ capes by burrowing with its tail. It can float just slightly using its wings.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Crystal</h5>
+                                </div>
+                                <p class="mb-1">It hides deep inside caves where no light ever reaches it and remains virtually motionless there.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-iii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ruby</h5>
+                                </div>
+                                <p class="mb-1">DUNSPARCE has a drill for its tail. It uses this tail to burrow into the ground backwards. This POKéMON is known to make its nest in complex shapes deep under the ground.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sapphire</h5>
+                                </div>
+                                <p class="mb-1">DUNSPARCE has a drill for its tail. It uses this tail to burrow into the ground backwards. This POKéMON is known to make its nest in complex shapes deep under the ground.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Emerald</h5>
+                                </div>
+                                <p class="mb-1">Its drill-tipped tail is used to burrow into the ground backwards. This POKéMON is known to make its nest in complex shapes deep under the ground.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">FireRed</h5>
+                                </div>
+                                <p class="mb-1">If spotted, it escapes by burrowing with its tail. It can hover just slightly using its wings.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">LeafGreen</h5>
+                                </div>
+                                <p class="mb-1">When spotted, this POKéMON escapes backward by furiously boring into the ground with its tail.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-iv">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Diamond</h5>
+                                </div>
+                                <p class="mb-1">It digs into the ground with its tail and makes a mazelike nest. It can fly just a little.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Pearl</h5>
+                                </div>
+                                <p class="mb-1">It digs into the ground with its tail and makes a mazelike nest. It can fly just a little.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Platinum</h5>
+                                </div>
+                                <p class="mb-1">It digs into the ground with its tail and makes a mazelike nest. It can fly just a little.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">HeartGold</h5>
+                                </div>
+                                <p class="mb-1">When spotted, this Pokémon escapes backward by furiously boring into the ground with its tail.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">SoulSilver</h5>
+                                </div>
+                                <p class="mb-1">If spotted, it escapes by burrowing with its tail. It can float just slightly using its wings.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-v">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Black</h5>
+                                </div>
+                                <p class="mb-1">It digs into the ground with its tail and makes a mazelike nest. It can fly just a little.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">White</h5>
+                                </div>
+                                <p class="mb-1">It digs into the ground with its tail and makes a mazelike nest. It can fly just a little.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Black 2</h5>
+                                </div>
+                                <p class="mb-1">It creates mazes in dark locations. When spotted, it flees into the ground by digging with its tail.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">White 2</h5>
+                                </div>
+                                <p class="mb-1">It creates mazes in dark locations. When spotted, it flees into the ground by digging with its tail.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-vi">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">X</h5>
+                                </div>
+                                <p class="mb-1">When spotted, this Pokémon escapes backward by furiously boring into the ground with its tail.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Y</h5>
+                                </div>
+                                <p class="mb-1">It digs into the ground with its tail and makes a mazelike nest. It can fly just a little.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Omega Ruby</h5>
+                                </div>
+                                <p class="mb-1">Dunsparce has a drill for its tail. It uses this tail to burrow into the ground backward. This Pokémon is known to make its nest in complex shapes deep under the ground.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Alpha Sapphire</h5>
+                                </div>
+                                <p class="mb-1">Dunsparce has a drill for its tail. It uses this tail to burrow into the ground backward. This Pokémon is known to make its nest in complex shapes deep under the ground.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-vii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ultra Sun</h5>
+                                </div>
+                                <p class="mb-1">It travels by digging through the ground. Diglett and Dunsparce share one another’s tunnels happily.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ultra Moon</h5>
+                                </div>
+                                <p class="mb-1">When it sees a person, it digs a hole with its tail to make its escape. If you happen to find one, consider yourself lucky.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-viii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sword</h5>
+                                </div>
+                                <p class="mb-1">This Pokémon’s tiny wings have some scientists saying that Dunsparce used to fly through the sky in ancient times.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Shield</h5>
+                                </div>
+                                <p class="mb-1">The nests Dunsparce live in are mazes of tunnels. They never get lost in their own nests—they can tell where they are by the scent of the dirt.</p>
+                            </li>
+                    </ul>
+                </div>
+    </div>
+</div>
+
+<script>
+    $( document ).ready(function() {
+    $("#generationSelect").on('change', function(e){
+        var showedDescription = $('#descriptionsContainer .collapse\\.show');
+        showedDescription.removeClass('collapse.show');
+        showedDescription.addClass('collapse');
+        var targetDescription = $($(this).val());
+        targetDescription.removeClass('collapse');
+        targetDescription.addClass('collapse.show');
+    });
+
+    var firstDescription = $("#descriptionsContainer .collapse").first();
+    firstDescription.removeClass('collapse');
+    firstDescription.addClass('collapse.show');
+});
+</script>  </div>
 </body>
 </html>

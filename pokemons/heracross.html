@@ -12,6 +12,7 @@
   <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AADq/wAPYwAAAP8iADTWGAD/UQAA/zsFAP/sPQAAAP8AAP/3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmZmQAAAAmZmZmZmZmZmSIpk5kAkACZmZkzOZmZmZl3eZOZZmZmmZmZmZlmZmaZGqoRGZmZmZkaqhEZREREmRAQERlERESZERERGURERJmZmZmZmZmZmYiZmZmZmZAJiJklWQAAAAmZmZmZAAAAD//wAA//8AAAB/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAB/AAAAfwAA" rel="icon" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link href="/rustedex/assets/css/rustedex.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
@@ -26,64 +27,64 @@
 		<table class="table">
   			<tbody>
   				<tr>
-  					<th scope="row">Nom</th>
-  			    	<td>Scarhino (anglais: <strong>Heracross</strong>, japonais: <strong>ヘラクロス Heracros</strong>)</td>
+  					<th scope="row">Name</th>
+  			    	<td>Heracross (french: <strong>Scarhino</strong>, japonais: <strong>ヘラクロス Heracros</strong>)</td>
   			  	</tr>
                 <tr>
   			    	<th scope="row">Types</th>
                     <td><img src="/rustedex/assets/images/types/bug.png" class="type"><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>  			  	</tr>
                 <tr>
-  			    	<th scope="row">Catégorie</th>
-  			    	<td>Pokémon Unicorne</td>
+  			    	<th scope="row">Genus</th>
+  			    	<td>Single Horn Pokémon</td>
   			  	</tr>
                 <tr>
-					<th scope="row">Taille</th>
+					<th scope="row">Height</th>
 					<td>1.5      m</td>
 				</tr>
 				<tr>
-					<th scope="row">Poids</th>
+					<th scope="row">Weight</th>
 					<td>54       kg</td>
 				</tr>
                 <tr>
-					<th scope="row">Talents</th>
+					<th scope="row">Abilities</th>
 					<td>
 						<ol>
-							<li>Essaim</li><li>Cran</li><li>Impudence</li>
+							<li>Swarm</li><li>Guts</li><li>Moxie</li>
 						</ol>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Groupes d'Œuf</th>
+					<th scope="row">Egg groups</th>
 					<td>
 						<ol>
-							<li>Insectoïde</li>
+							<li>Bug</li>
 						</ol>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Éclosion</th>
+					<th scope="row">Hatch time</th>
 					<td>6630 pas</td>
 				</tr>
 				<tr>
-					<th scope="row">Points d'effort</th>
+					<th scope="row">Effort points</th>
 					<td>
 						<ul>
-							<li>+2 Attaque</li>
+							<li>+2 Attack</li>
 						</ul>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Points d'expérience</th>
+					<th scope="row">Base experience</th>
 					<td>175 exp.</td>
 				</tr>
 				<tr>
-					<th scope="row">Expérience au niveau 100</th>
+					<th scope="row">Experience at level 100</th>
 					<td>1 250 000 exp.</td>
 				</tr>
 				<tr>
-					<th scope="row">Sexe</th>
+					<th scope="row">Gender ratio</th>
 					<td>
-					50.0% femelle, 50.0% mâle 
+					50.0% female, 50.0% male 
 					<div class="progress mw-75">
 						<div class="progress-bar bg-female" role="progressbar" style="width: 50.0%" aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100"></div>
   						<div class="progress-bar bg-male" role="progressbar" style="width: 50.0%" aria-valuenow="50.0" aria-valuemin="50.0" aria-valuemax="100"></div>
@@ -91,18 +92,236 @@
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Couleur</th>
-					<td>Bleu</td>
+					<th scope="row">Color</th>
+					<td>Blue</td>
 				</tr>
 				<tr>
-					<th scope="row">Taux de capture</th>
+					<th scope="row">Capture rate</th>
 					<td>45</td>
 				</tr>
 			</tbody>
 		</table>
-      </div>
+	  </div>
     </div>    
   </div>
-</div>  </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header">
+        <div class="dropdown">
+            <select id="generationSelect" class="form-select w-auto" aria-label="Choose a generation">
+                    <option value="#collapse-generation-ii">Generation II</option>
+                    <option value="#collapse-generation-iii">Generation III</option>
+                    <option value="#collapse-generation-iv">Generation IV</option>
+                    <option value="#collapse-generation-v">Generation V</option>
+                    <option value="#collapse-generation-vi">Generation VI</option>
+                    <option value="#collapse-generation-vii">Generation VII</option>
+                    <option value="#collapse-generation-viii">Generation VIII</option>
+            </select>
+        </div>
+    </div>
+    <div id="descriptionsContainer" class="card-body">
+                <div class="collapse" id="collapse-generation-ii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Gold</h5>
+                                </div>
+                                <p class="mb-1">This powerful POKéMON thrusts its prized horn under its enemies’ bellies then lifts and throws them.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Silver</h5>
+                                </div>
+                                <p class="mb-1">Usually docile, but if disturbed while sipping honey, it chases off the intruder with its horn.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Crystal</h5>
+                                </div>
+                                <p class="mb-1">With its Herculean powers, it can easily throw arou­ nd an object that is 100 times its own weight.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-iii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ruby</h5>
+                                </div>
+                                <p class="mb-1">HERACROSS charges in a straight line at its foe, slips beneath the foe’s grasp, and then scoops up and hurls the opponent with its mighty horn. This POKéMON even has enough power to topple a massive tree.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sapphire</h5>
+                                </div>
+                                <p class="mb-1">HERACROSS has sharp claws on its feet. These are planted firmly into the ground or the bark of a tree, giving the POKéMON a secure and solid footing to forcefully fling away foes with its proud horn.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Emerald</h5>
+                                </div>
+                                <p class="mb-1">They gather in forests seeking the sweet sap of trees. It is completely clad in a steel-hard shell. It is proud of its horn, which it uses to fling foes.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">FireRed</h5>
+                                </div>
+                                <p class="mb-1">Usually docile, but if disturbed while sipping honey, it chases off the intruder with its horn.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">LeafGreen</h5>
+                                </div>
+                                <p class="mb-1">This powerful POKéMON thrusts its prized horn under its enemies’ bellies, then lifts and throws them.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-iv">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">SoulSilver</h5>
+                                </div>
+                                <p class="mb-1">It is usually docile, but if it is disturbed while sipping honey, it chases off the intruder with its horn.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Diamond</h5>
+                                </div>
+                                <p class="mb-1">It gathers in forests to search for tree sap, its favorite food. It’s strong enough to hurl foes.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Pearl</h5>
+                                </div>
+                                <p class="mb-1">With powerful legs and claws, it generates enough power to hurl foes over great distances.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Platinum</h5>
+                                </div>
+                                <p class="mb-1">It loves sweet honey. To keep all the honey to itself, it hurls rivals away with its prized horn.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">HeartGold</h5>
+                                </div>
+                                <p class="mb-1">This powerful Pokémon thrusts its prized horn under its enemies’ bellies, then lifts and throws them.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-v">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Black</h5>
+                                </div>
+                                <p class="mb-1">It loves sweet honey. To keep all the honey to itself, it hurls rivals away with its prized horn.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">White</h5>
+                                </div>
+                                <p class="mb-1">It loves sweet honey. To keep all the honey to itself, it hurls rivals away with its prized horn.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Black 2</h5>
+                                </div>
+                                <p class="mb-1">No matter how heavy its opponents, it flings them far away with its prized horn.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">White 2</h5>
+                                </div>
+                                <p class="mb-1">No matter how heavy its opponents, it flings them far away with its prized horn.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-vi">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">X</h5>
+                                </div>
+                                <p class="mb-1">This powerful Pokémon thrusts its prized horn under its enemies’ bellies, then lifts and throws them.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Y</h5>
+                                </div>
+                                <p class="mb-1">With its Herculean powers, it can easily throw around an object that is 100 times its own weight.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Omega Ruby</h5>
+                                </div>
+                                <p class="mb-1">Heracross charges in a straight line at its foe, slips beneath the foe’s grasp, and then scoops up and hurls the opponent with its mighty horn. This Pokémon even has enough power to topple a massive tree.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Alpha Sapphire</h5>
+                                </div>
+                                <p class="mb-1">Heracross has sharp claws on its feet. These are planted firmly into the ground or the bark of a tree, giving the Pokémon a secure and solid footing to forcefully fling away foes with its proud horn.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-vii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ultra Sun</h5>
+                                </div>
+                                <p class="mb-1">It’s proud of its thick horn. In Alola, its biggest rival is Vikavolt, which it’s always fighting with.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ultra Moon</h5>
+                                </div>
+                                <p class="mb-1">It roams through forests searching for sweet nectar. Although it boasts fantastic physical strength, it’s not that good at flying.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-viii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sword</h5>
+                                </div>
+                                <p class="mb-1">Heracross loves sweet sap and will go looking through forests for it. The Pokémon uses its two antennae to pick up scents as it searches.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Shield</h5>
+                                </div>
+                                <p class="mb-1">This Pokémon takes pride in its strength, which allows it to lift things 100 times heavier than itself with no trouble at all.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Legends: Arceus</h5>
+                                </div>
+                                <p class="mb-1">This Pokémon has an unparalleled horn. Heracross itself demonstrates tremendous power—it&#x27;s capable of throwing several people trained in the traditional arts of war at once.</p>
+                            </li>
+                    </ul>
+                </div>
+    </div>
+</div>
+
+<script>
+    $( document ).ready(function() {
+    $("#generationSelect").on('change', function(e){
+        var showedDescription = $('#descriptionsContainer .collapse\\.show');
+        showedDescription.removeClass('collapse.show');
+        showedDescription.addClass('collapse');
+        var targetDescription = $($(this).val());
+        targetDescription.removeClass('collapse');
+        targetDescription.addClass('collapse.show');
+    });
+
+    var firstDescription = $("#descriptionsContainer .collapse").first();
+    firstDescription.removeClass('collapse');
+    firstDescription.addClass('collapse.show');
+});
+</script>  </div>
 </body>
 </html>

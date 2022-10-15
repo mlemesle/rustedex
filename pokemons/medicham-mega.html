@@ -12,6 +12,7 @@
   <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AADq/wAPYwAAAP8iADTWGAD/UQAA/zsFAP/sPQAAAP8AAP/3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmZmQAAAAmZmZmZmZmZmSIpk5kAkACZmZkzOZmZmZl3eZOZZmZmmZmZmZlmZmaZGqoRGZmZmZkaqhEZREREmRAQERlERESZERERGURERJmZmZmZmZmZmYiZmZmZmZAJiJklWQAAAAmZmZmZAAAAD//wAA//8AAAB/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAB/AAAAfwAA" rel="icon" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link href="/rustedex/assets/css/rustedex.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
@@ -26,64 +27,64 @@
 		<table class="table">
   			<tbody>
   				<tr>
-  					<th scope="row">Nom</th>
-  			    	<td>Charmina (anglais: <strong>Medicham</strong>, japonais: <strong>チャーレム Charem</strong>)</td>
+  					<th scope="row">Name</th>
+  			    	<td>Medicham (french: <strong>Charmina</strong>, japonais: <strong>チャーレム Charem</strong>)</td>
   			  	</tr>
                 <tr>
   			    	<th scope="row">Types</th>
                     <td><img src="/rustedex/assets/images/types/fighting.png" class="type"><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>  			  	</tr>
                 <tr>
-  			    	<th scope="row">Catégorie</th>
-  			    	<td>Pokémon Méditation</td>
+  			    	<th scope="row">Genus</th>
+  			    	<td>Meditate Pokémon</td>
   			  	</tr>
                 <tr>
-					<th scope="row">Taille</th>
+					<th scope="row">Height</th>
 					<td>1.3      m</td>
 				</tr>
 				<tr>
-					<th scope="row">Poids</th>
+					<th scope="row">Weight</th>
 					<td>31.      kg</td>
 				</tr>
                 <tr>
-					<th scope="row">Talents</th>
+					<th scope="row">Abilities</th>
 					<td>
 						<ol>
-							<li>Force Pure</li>
+							<li>Pure Power</li>
 						</ol>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Groupes d'Œuf</th>
+					<th scope="row">Egg groups</th>
 					<td>
 						<ol>
-							<li>Humanoïde</li>
+							<li>Human-Like</li>
 						</ol>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Éclosion</th>
+					<th scope="row">Hatch time</th>
 					<td>5355 pas</td>
 				</tr>
 				<tr>
-					<th scope="row">Points d'effort</th>
+					<th scope="row">Effort points</th>
 					<td>
 						<ul>
-							<li>+2 Vitesse</li>
+							<li>+2 Speed</li>
 						</ul>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Points d'expérience</th>
+					<th scope="row">Base experience</th>
 					<td>179 exp.</td>
 				</tr>
 				<tr>
-					<th scope="row">Expérience au niveau 100</th>
+					<th scope="row">Experience at level 100</th>
 					<td>1 000 000 exp.</td>
 				</tr>
 				<tr>
-					<th scope="row">Sexe</th>
+					<th scope="row">Gender ratio</th>
 					<td>
-					50.0% femelle, 50.0% mâle 
+					50.0% female, 50.0% male 
 					<div class="progress mw-75">
 						<div class="progress-bar bg-female" role="progressbar" style="width: 50.0%" aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100"></div>
   						<div class="progress-bar bg-male" role="progressbar" style="width: 50.0%" aria-valuenow="50.0" aria-valuemin="50.0" aria-valuemax="100"></div>
@@ -91,18 +92,173 @@
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Couleur</th>
-					<td>Rouge</td>
+					<th scope="row">Color</th>
+					<td>Red</td>
 				</tr>
 				<tr>
-					<th scope="row">Taux de capture</th>
+					<th scope="row">Capture rate</th>
 					<td>90</td>
 				</tr>
 			</tbody>
 		</table>
-      </div>
+	  </div>
     </div>    
   </div>
-</div>  </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header">
+        <div class="dropdown">
+            <select id="generationSelect" class="form-select w-auto" aria-label="Choose a generation">
+                    <option value="#collapse-generation-iii">Generation III</option>
+                    <option value="#collapse-generation-iv">Generation IV</option>
+                    <option value="#collapse-generation-v">Generation V</option>
+                    <option value="#collapse-generation-vi">Generation VI</option>
+            </select>
+        </div>
+    </div>
+    <div id="descriptionsContainer" class="card-body">
+                <div class="collapse" id="collapse-generation-iii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ruby</h5>
+                                </div>
+                                <p class="mb-1">It is said that through meditation, MEDICHAM heightens energy inside its body and sharpens its sixth sense. This POKéMON hides its presence by merging itself with fields and mountains.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sapphire</h5>
+                                </div>
+                                <p class="mb-1">Through the power of meditation, MEDICHAM developed its sixth sense. It gained the ability to use psychokinetic powers. This POKéMON is known to meditate for a whole month without eating.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Emerald</h5>
+                                </div>
+                                <p class="mb-1">Through crushingly harsh yoga training, it gained the power to foretell its foe’s actions. It battles with elegant, dance- like movement.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">FireRed</h5>
+                                </div>
+                                <p class="mb-1">It elegantly avoids attacks with dance- like steps, then launches a devastating blow in the same motion.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">LeafGreen</h5>
+                                </div>
+                                <p class="mb-1">It elegantly avoids attacks with dance- like steps, then launches a devastating blow in the same motion.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-iv">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Diamond</h5>
+                                </div>
+                                <p class="mb-1">Through yoga training, it has honed its sixth sense. Its movements are elegant.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Pearl</h5>
+                                </div>
+                                <p class="mb-1">Through daily meditation, it hones its spiritual power. It can sense what others are thinking.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Platinum</h5>
+                                </div>
+                                <p class="mb-1">It gains the ability to see the aura of its opponents by honing its mind through starvation.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">HeartGold</h5>
+                                </div>
+                                <p class="mb-1">Through yoga training, it gained the psychic power to predict its foe’s next move.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">SoulSilver</h5>
+                                </div>
+                                <p class="mb-1">Through yoga training, it gained the psychic power to predict its foe’s next move.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-v">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Black</h5>
+                                </div>
+                                <p class="mb-1">It gains the ability to see the aura of its opponents by honing its mind through starvation.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">White</h5>
+                                </div>
+                                <p class="mb-1">It gains the ability to see the aura of its opponents by honing its mind through starvation.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Black 2</h5>
+                                </div>
+                                <p class="mb-1">It gains the ability to see the aura of its opponents by honing its mind through starvation.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">White 2</h5>
+                                </div>
+                                <p class="mb-1">It gains the ability to see the aura of its opponents by honing its mind through starvation.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-vi">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">X</h5>
+                                </div>
+                                <p class="mb-1">It elegantly avoids attacks with dance-like steps, then launches a devastating blow in the same motion.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Y</h5>
+                                </div>
+                                <p class="mb-1">Through yoga training, it gained the psychic power to predict its foe’s next move.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Omega Ruby</h5>
+                                </div>
+                                <p class="mb-1">It is said that through meditation, Medicham heightens energy inside its body and sharpens its sixth sense. This Pokémon hides its presence by merging itself with fields and mountains.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Alpha Sapphire</h5>
+                                </div>
+                                <p class="mb-1">Through the power of meditation, Medicham developed its sixth sense. It gained the ability to use psychokinetic powers. This Pokémon is known to meditate for a whole month without eating.</p>
+                            </li>
+                    </ul>
+                </div>
+    </div>
+</div>
+
+<script>
+    $( document ).ready(function() {
+    $("#generationSelect").on('change', function(e){
+        var showedDescription = $('#descriptionsContainer .collapse\\.show');
+        showedDescription.removeClass('collapse.show');
+        showedDescription.addClass('collapse');
+        var targetDescription = $($(this).val());
+        targetDescription.removeClass('collapse');
+        targetDescription.addClass('collapse.show');
+    });
+
+    var firstDescription = $("#descriptionsContainer .collapse").first();
+    firstDescription.removeClass('collapse');
+    firstDescription.addClass('collapse.show');
+});
+</script>  </div>
 </body>
 </html>

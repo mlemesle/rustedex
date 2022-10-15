@@ -12,6 +12,7 @@
   <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AADq/wAPYwAAAP8iADTWGAD/UQAA/zsFAP/sPQAAAP8AAP/3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmZmQAAAAmZmZmZmZmZmSIpk5kAkACZmZkzOZmZmZl3eZOZZmZmmZmZmZlmZmaZGqoRGZmZmZkaqhEZREREmRAQERlERESZERERGURERJmZmZmZmZmZmYiZmZmZmZAJiJklWQAAAAmZmZmZAAAAD//wAA//8AAAB/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAB/AAAAfwAA" rel="icon" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link href="/rustedex/assets/css/rustedex.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
@@ -26,64 +27,64 @@
 		<table class="table">
   			<tbody>
   				<tr>
-  					<th scope="row">Nom</th>
-  			    	<td>Sabelette (anglais: <strong>Sandshrew</strong>, japonais: <strong>サンド Sand</strong>)</td>
+  					<th scope="row">Name</th>
+  			    	<td>Sandshrew (french: <strong>Sabelette</strong>, japonais: <strong>サンド Sand</strong>)</td>
   			  	</tr>
                 <tr>
   			    	<th scope="row">Types</th>
                     <td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>  			  	</tr>
                 <tr>
-  			    	<th scope="row">Catégorie</th>
-  			    	<td>Pokémon Souris</td>
+  			    	<th scope="row">Genus</th>
+  			    	<td>Mouse Pokémon</td>
   			  	</tr>
                 <tr>
-					<th scope="row">Taille</th>
+					<th scope="row">Height</th>
 					<td>0.6      m</td>
 				</tr>
 				<tr>
-					<th scope="row">Poids</th>
+					<th scope="row">Weight</th>
 					<td>12       kg</td>
 				</tr>
                 <tr>
-					<th scope="row">Talents</th>
+					<th scope="row">Abilities</th>
 					<td>
 						<ol>
-							<li>Voile Sable</li><li>Baigne Sable</li>
+							<li>Sand Veil</li><li>Sand Rush</li>
 						</ol>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Groupes d'Œuf</th>
+					<th scope="row">Egg groups</th>
 					<td>
 						<ol>
-							<li>Terrestre</li>
+							<li>Field</li>
 						</ol>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Éclosion</th>
+					<th scope="row">Hatch time</th>
 					<td>5355 pas</td>
 				</tr>
 				<tr>
-					<th scope="row">Points d'effort</th>
+					<th scope="row">Effort points</th>
 					<td>
 						<ul>
-							<li>+1 Défense</li>
+							<li>+1 Defense</li>
 						</ul>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Points d'expérience</th>
+					<th scope="row">Base experience</th>
 					<td>60 exp.</td>
 				</tr>
 				<tr>
-					<th scope="row">Expérience au niveau 100</th>
+					<th scope="row">Experience at level 100</th>
 					<td>1 000 000 exp.</td>
 				</tr>
 				<tr>
-					<th scope="row">Sexe</th>
+					<th scope="row">Gender ratio</th>
 					<td>
-					50.0% femelle, 50.0% mâle 
+					50.0% female, 50.0% male 
 					<div class="progress mw-75">
 						<div class="progress-bar bg-female" role="progressbar" style="width: 50.0%" aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100"></div>
   						<div class="progress-bar bg-male" role="progressbar" style="width: 50.0%" aria-valuenow="50.0" aria-valuemin="50.0" aria-valuemax="100"></div>
@@ -91,18 +92,277 @@
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">Couleur</th>
-					<td>Jaune</td>
+					<th scope="row">Color</th>
+					<td>Yellow</td>
 				</tr>
 				<tr>
-					<th scope="row">Taux de capture</th>
+					<th scope="row">Capture rate</th>
 					<td>255</td>
 				</tr>
 			</tbody>
 		</table>
-      </div>
+	  </div>
     </div>    
   </div>
-</div>  </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header">
+        <div class="dropdown">
+            <select id="generationSelect" class="form-select w-auto" aria-label="Choose a generation">
+                    <option value="#collapse-generation-i">Generation I</option>
+                    <option value="#collapse-generation-ii">Generation II</option>
+                    <option value="#collapse-generation-iii">Generation III</option>
+                    <option value="#collapse-generation-iv">Generation IV</option>
+                    <option value="#collapse-generation-v">Generation V</option>
+                    <option value="#collapse-generation-vi">Generation VI</option>
+                    <option value="#collapse-generation-vii">Generation VII</option>
+                    <option value="#collapse-generation-viii">Generation VIII</option>
+            </select>
+        </div>
+    </div>
+    <div id="descriptionsContainer" class="card-body">
+                <div class="collapse" id="collapse-generation-i">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Red</h5>
+                                </div>
+                                <p class="mb-1">Burrows deep underground in arid locations far from water. It only emerges to hunt for food.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Blue</h5>
+                                </div>
+                                <p class="mb-1">Burrows deep underground in arid locations far from water. It only emerges to hunt for food.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Yellow</h5>
+                                </div>
+                                <p class="mb-1">Its body is dry. When it gets cold at night, its hide is said to become coated with a fine dew.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-ii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Gold</h5>
+                                </div>
+                                <p class="mb-1">If it fell from a great height, this POKéMON could save itself by rolling into a ball and bouncing.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Silver</h5>
+                                </div>
+                                <p class="mb-1">Disliking water, it lives in deep burrows in arid areas. It can roll itself instantly into a ball.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Crystal</h5>
+                                </div>
+                                <p class="mb-1">It prefers dry, sandy places because it uses the sand to protect itself when threatened.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-iii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ruby</h5>
+                                </div>
+                                <p class="mb-1">SANDSHREW’s body is configured to absorb water without waste, enabling it to survive in an arid desert. This POKéMON curls up to protect itself from its enemies.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sapphire</h5>
+                                </div>
+                                <p class="mb-1">SANDSHREW has a very dry hide that is extremely tough. The POKéMON can roll into a ball that repels any attack. At night, it burrows into the desert sand to sleep.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Emerald</h5>
+                                </div>
+                                <p class="mb-1">When it curls up in a ball, it can make any attack bounce off harmlessly. Its hide has turned tough and solid as a result of living in the desert.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">FireRed</h5>
+                                </div>
+                                <p class="mb-1">It burrows and lives underground. If threatened, it curls itself up into a ball for protection.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">LeafGreen</h5>
+                                </div>
+                                <p class="mb-1">Burrows deep underground in arid locations far from water. It only emerges to hunt for prey.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-iv">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Diamond</h5>
+                                </div>
+                                <p class="mb-1">To protect itself from attackers, it curls up into a ball. It lives in arid regions with minimal rainfall.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Pearl</h5>
+                                </div>
+                                <p class="mb-1">To protect itself from attackers, it curls up into a ball. It lives in arid regions with minimal rainfall.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Platinum</h5>
+                                </div>
+                                <p class="mb-1">To protect itself from attackers, it curls up into a ball. It lives in arid regions with minimal rainfall.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">HeartGold</h5>
+                                </div>
+                                <p class="mb-1">If it fell from a great height, this Pokémon could save itself by rolling into a ball and bouncing.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">SoulSilver</h5>
+                                </div>
+                                <p class="mb-1">Disliking water, it lives in deep burrows in arid areas. It can roll itself instantly into a ball.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-v">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Black</h5>
+                                </div>
+                                <p class="mb-1">To protect itself from attackers, it curls up into a ball. It lives in arid regions with minimal rainfall.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">White</h5>
+                                </div>
+                                <p class="mb-1">To protect itself from attackers, it curls up into a ball. It lives in arid regions with minimal rainfall.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Black 2</h5>
+                                </div>
+                                <p class="mb-1">It digs deep burrows to live in. When in danger, it rolls up its body to withstand attacks.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">White 2</h5>
+                                </div>
+                                <p class="mb-1">It digs deep burrows to live in. When in danger, it rolls up its body to withstand attacks.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-vi">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">X</h5>
+                                </div>
+                                <p class="mb-1">It burrows and lives underground. If threatened, it curls itself up into a ball for protection.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Y</h5>
+                                </div>
+                                <p class="mb-1">Disliking water, it lives in deep burrows in arid areas. It can roll itself instantly into a ball.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Omega Ruby</h5>
+                                </div>
+                                <p class="mb-1">Sandshrew’s body is configured to absorb water without waste, enabling it to survive in an arid desert. This Pokémon curls up to protect itself from its enemies.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Alpha Sapphire</h5>
+                                </div>
+                                <p class="mb-1">Sandshrew has a very dry hide that is extremely tough. The Pokémon can roll into a ball that repels any attack. At night, it burrows into the desert sand to sleep.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-vii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sun</h5>
+                                </div>
+                                <p class="mb-1">It can roll its body into a ball. It moves through the desert by rolling at high speeds.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Moon</h5>
+                                </div>
+                                <p class="mb-1">It usually makes its home in deserts and arid zones, where rain does not fall. It digs holes to catch Bug-type Pokémon.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ultra Sun</h5>
+                                </div>
+                                <p class="mb-1">It lives in areas of limited rainfall. When danger approaches, it curls up into a ball to protect its soft stomach.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ultra Moon</h5>
+                                </div>
+                                <p class="mb-1">When its skin gets wrinkled from moisture, it heads for a volcano. It lies flat on a spot with a lot of geothermal heat and dries itself out.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Let&#x27;s Go, Pikachu!</h5>
+                                </div>
+                                <p class="mb-1">Its body is dry. When it gets cold at night, its hide is said to become coated with a fine dew.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Let&#x27;s Go, Eevee!</h5>
+                                </div>
+                                <p class="mb-1">Its body is dry. When it gets cold at night, its hide is said to become coated with a fine dew.</p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="collapse" id="collapse-generation-viii">
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Sword</h5>
+                                </div>
+                                <p class="mb-1">It loves to bathe in the grit of dry, sandy areas. By sand bathing, the Pokémon rids itself of dirt and moisture clinging to its body.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Shield</h5>
+                                </div>
+                                <p class="mb-1">It burrows into the ground to create its nest. If hard stones impede its tunneling, it uses its sharp claws to shatter them and then carries on digging.</p>
+                            </li>
+                    </ul>
+                </div>
+    </div>
+</div>
+
+<script>
+    $( document ).ready(function() {
+    $("#generationSelect").on('change', function(e){
+        var showedDescription = $('#descriptionsContainer .collapse\\.show');
+        showedDescription.removeClass('collapse.show');
+        showedDescription.addClass('collapse');
+        var targetDescription = $($(this).val());
+        targetDescription.removeClass('collapse');
+        targetDescription.addClass('collapse.show');
+    });
+
+    var firstDescription = $("#descriptionsContainer .collapse").first();
+    firstDescription.removeClass('collapse');
+    firstDescription.addClass('collapse.show');
+});
+</script>  </div>
 </body>
 </html>
