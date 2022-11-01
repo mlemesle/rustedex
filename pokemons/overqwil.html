@@ -43,7 +43,10 @@
   			  	</tr>
                 <tr>
   			    	<th scope="row">Types</th>
-                    <td><img src="/rustedex/assets/images/types/dark.png" class="type mx-1"><img src="/rustedex/assets/images/types/poison.png" class="type mx-1"></td>  			  	</tr>
+                    <td>
+							<img src="/rustedex/assets/images/types/dark.png" class="type">							<img src="/rustedex/assets/images/types/poison.png" class="type">					</td>
+					
+  			  	</tr>
                 <tr>
   			    	<th scope="row">Genus</th>
   			    	<td>Pin Cluster Pokémon</td>
@@ -153,6 +156,41 @@
     firstDescription.removeClass('collapse');
     firstDescription.addClass('collapse.show');
 });
+</script>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+	<caption>Moves learned by Overqwil
+	<div class="dropdown float-end">
+            <select id="by-level-version-select" class="form-select w-auto" aria-label="Choose a version">
+            </select>
+        </div>
+	</caption>
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Level</th>
+			<th scope="col">Type</th>
+			<th scope="col">Category</th>
+			<th scope="col">Power</th>
+			<th scope="col">Accuracy</th>
+			<th scope="col">PP</th>
+		<tr>
+	</thead>
+  </table>
+</div>
+
+<script>
+	$(".all-by-levels").hide();
+	
+	$("#by-level-version-select").on('change', function(e) {
+		$(".all-by-levels").hide();
+		console.log($(this).val());
+		var target = $($(this).val());
+		console.log(target);
+		target.show();
+	});
+	
+	$(".all-by-levels").first().show();
 </script>  </div>
 </body>
 </html>
