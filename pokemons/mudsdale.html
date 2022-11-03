@@ -192,472 +192,1261 @@
     firstDescription.addClass('collapse.show');
 });
 </script>
-<div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
-	<caption>Moves learned by Mudsdale
-	<div class="dropdown float-end">
-            <select id="by-level-version-select" class="form-select w-auto" aria-label="Choose a version">
-                    <option value="#by-level-sun-moon">Sun &amp; Moon</option>
-                    <option value="#by-level-ultra-sun-ultra-moon">Ultra Sun &amp; Ultra Moon</option>
-                    <option value="#by-level-sword-shield">Sword &amp; Shield</option>
+<div class="card mb-3">
+    <div class="card-header">
+		<div class="dropdown float-end">
+            <select id="version-select" class="form-select w-auto" aria-label="Choose a version">
+                    <option value=".moves-sun-moon">Sun &amp; Moon</option>
+                    <option value=".moves-ultra-sun-ultra-moon">Ultra Sun &amp; Ultra Moon</option>
+                    <option value=".moves-sword-shield">Sword &amp; Shield</option>
             </select>
         </div>
-	</caption>
-	<thead>
-		<tr>
-			<th scope="col">Name</th>
-			<th scope="col">Level</th>
-			<th scope="col">Type</th>
-			<th scope="col">Category</th>
-			<th scope="col">Power</th>
-			<th scope="col">Accuracy</th>
-			<th scope="col">PP</th>
-		<tr>
-	</thead>
-		<tbody id="by-level-sun-moon" class="all-by-levels">
-			<tr>
-				<th scope="row">Mud-Slap</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 20 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Mud Sport</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Bulldoze</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 60 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Rototiller</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Mud Sport</th>
-				<td>3</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Rototiller</th>
-				<td>8</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Bulldoze</th>
-				<td>10</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 60 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Double Kick</th>
-				<td>15</td>
-				<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 30 </td>
-				<td> 100 </td>
-				<td> 30 </td>
-			</tr>
-			<tr>
-				<th scope="row">Stomp</th>
-				<td>17</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 65 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Bide</th>
-				<td>22</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">High Horsepower</th>
-				<td>24</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 95 </td>
-				<td> 95 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Iron Defense</th>
-				<td>29</td>
-				<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Heavy Slam</th>
-				<td>34</td>
-				<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Counter</th>
-				<td>42</td>
-				<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Earthquake</th>
-				<td>47</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 100 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Mega Kick</th>
-				<td>55</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 120 </td>
-				<td> 75 </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Superpower</th>
-				<td>60</td>
-				<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 120 </td>
-				<td> 100 </td>
-				<td> 5 </td>
-			</tr>
-		</tbody>
-		<tbody id="by-level-sword-shield" class="all-by-levels">
-			<tr>
-				<th scope="row">Double Kick</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 30 </td>
-				<td> 100 </td>
-				<td> 30 </td>
-			</tr>
-			<tr>
-				<th scope="row">Mud-Slap</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 20 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Rock Smash</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Iron Defense</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Bulldoze</th>
-				<td>12</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 60 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Stomp</th>
-				<td>16</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 65 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Strength</th>
-				<td>20</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 80 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Counter</th>
-				<td>24</td>
-				<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">High Horsepower</th>
-				<td>28</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 95 </td>
-				<td> 95 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Heavy Slam</th>
-				<td>34</td>
-				<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Earthquake</th>
-				<td>40</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 100 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Mega Kick</th>
-				<td>46</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 120 </td>
-				<td> 75 </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Superpower</th>
-				<td>52</td>
-				<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 120 </td>
-				<td> 100 </td>
-				<td> 5 </td>
-			</tr>
-		</tbody>
-		<tbody id="by-level-ultra-sun-ultra-moon" class="all-by-levels">
-			<tr>
-				<th scope="row">Mud-Slap</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 20 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Mud Sport</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Bulldoze</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 60 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Rototiller</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Mud Sport</th>
-				<td>3</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Rototiller</th>
-				<td>8</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Bulldoze</th>
-				<td>10</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 60 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Double Kick</th>
-				<td>15</td>
-				<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 30 </td>
-				<td> 100 </td>
-				<td> 30 </td>
-			</tr>
-			<tr>
-				<th scope="row">Stomp</th>
-				<td>17</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 65 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Bide</th>
-				<td>22</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">High Horsepower</th>
-				<td>24</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 95 </td>
-				<td> 95 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Iron Defense</th>
-				<td>29</td>
-				<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Heavy Slam</th>
-				<td>34</td>
-				<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Counter</th>
-				<td>42</td>
-				<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Earthquake</th>
-				<td>47</td>
-				<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 100 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Mega Kick</th>
-				<td>55</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 120 </td>
-				<td> 75 </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Superpower</th>
-				<td>60</td>
-				<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 120 </td>
-				<td> 100 </td>
-				<td> 5 </td>
-			</tr>
-		</tbody>
-  </table>
+    </div>
+	
+	<div class="card-body">
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+					<caption>Moves learned per level by Mudsdale</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">Level</th>
+							<th scope="col">Type</th>
+							<th scope="col">Category</th>
+							<th scope="col">Power</th>
+							<th scope="col">Accuracy</th>
+							<th scope="col">PP</th>
+						<tr>
+					</thead>
+						<tbody class="all-by-levels moves-sun-moon">
+							<tr>
+								<th scope="row">Mud-Slap</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 20 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Mud Sport</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Bulldoze</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rototiller</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Mud Sport</th>
+								<td>3</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rototiller</th>
+								<td>8</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Bulldoze</th>
+								<td>10</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Double Kick</th>
+								<td>15</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 30 </td>
+								<td> 100 </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Stomp</th>
+								<td>17</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Bide</th>
+								<td>22</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">High Horsepower</th>
+								<td>24</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 95 </td>
+								<td> 95 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Iron Defense</th>
+								<td>29</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Heavy Slam</th>
+								<td>34</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Counter</th>
+								<td>42</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Earthquake</th>
+								<td>47</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 100 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Mega Kick</th>
+								<td>55</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 75 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Superpower</th>
+								<td>60</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 5 </td>
+							</tr>
+						</tbody>
+						<tbody class="all-by-levels moves-sword-shield">
+							<tr>
+								<th scope="row">Double Kick</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 30 </td>
+								<td> 100 </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Mud-Slap</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 20 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rock Smash</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Iron Defense</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Bulldoze</th>
+								<td>12</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Stomp</th>
+								<td>16</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Strength</th>
+								<td>20</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Counter</th>
+								<td>24</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">High Horsepower</th>
+								<td>28</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 95 </td>
+								<td> 95 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Heavy Slam</th>
+								<td>34</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Earthquake</th>
+								<td>40</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 100 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Mega Kick</th>
+								<td>46</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 75 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Superpower</th>
+								<td>52</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 5 </td>
+							</tr>
+						</tbody>
+						<tbody class="all-by-levels moves-ultra-sun-ultra-moon">
+							<tr>
+								<th scope="row">Mud-Slap</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 20 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Mud Sport</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Bulldoze</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rototiller</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Mud Sport</th>
+								<td>3</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rototiller</th>
+								<td>8</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Bulldoze</th>
+								<td>10</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Double Kick</th>
+								<td>15</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 30 </td>
+								<td> 100 </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Stomp</th>
+								<td>17</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Bide</th>
+								<td>22</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">High Horsepower</th>
+								<td>24</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 95 </td>
+								<td> 95 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Iron Defense</th>
+								<td>29</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Heavy Slam</th>
+								<td>34</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Counter</th>
+								<td>42</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Earthquake</th>
+								<td>47</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 100 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Mega Kick</th>
+								<td>55</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 75 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Superpower</th>
+								<td>60</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 5 </td>
+							</tr>
+						</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+					<caption>Moves learned by machines by Mudsdale</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">TM</th>
+							<th scope="col">Type</th>
+							<th scope="col">Category</th>
+							<th scope="col">Power</th>
+							<th scope="col">Accuracy</th>
+							<th scope="col">PP</th>
+						<tr>
+					</thead>
+						<tbody class="all-by-machines moves-sun-moon">
+							<tr>
+								<th scope="row">Roar</th>
+								<td>TM05</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Toxic</th>
+								<td>TM06</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 90 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Hidden Power</th>
+								<td>TM10</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Confide</th>
+								<td>TM100</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Protect</th>
+								<td>TM17</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Frustration</th>
+								<td>TM21</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Earthquake</th>
+								<td>TM26</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 100 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Return</th>
+								<td>TM27</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Double Team</th>
+								<td>TM32</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sandstorm</th>
+								<td>TM37</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rock Tomb</th>
+								<td>TM39</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 95 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Facade</th>
+								<td>TM42</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rest</th>
+								<td>TM44</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Attract</th>
+								<td>TM45</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Low Sweep</th>
+								<td>TM47</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Round</th>
+								<td>TM48</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Focus Blast</th>
+								<td>TM52</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 120 </td>
+								<td> 70 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Payback</th>
+								<td>TM66</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 50 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Giga Impact</th>
+								<td>TM68</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 150 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Bulldoze</th>
+								<td>TM78</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rock Slide</th>
+								<td>TM80</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 75 </td>
+								<td> 90 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Swagger</th>
+								<td>TM87</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 85 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sleep Talk</th>
+								<td>TM88</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Substitute</th>
+								<td>TM90</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+						</tbody>
+						<tbody class="all-by-machines moves-sword-shield">
+							<tr>
+								<th scope="row">Mega Kick</th>
+								<td>TM01</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 75 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Hyper Beam</th>
+								<td>TM08</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 150 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Giga Impact</th>
+								<td>TM09</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 150 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rest</th>
+								<td>TM21</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rock Slide</th>
+								<td>TM22</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 75 </td>
+								<td> 90 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Snore</th>
+								<td>TM24</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 50 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Protect</th>
+								<td>TM25</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Scary Face</th>
+								<td>TM26</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Attract</th>
+								<td>TM31</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sandstorm</th>
+								<td>TM32</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Facade</th>
+								<td>TM39</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Revenge</th>
+								<td>TM42</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rock Tomb</th>
+								<td>TM48</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 95 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sand Tomb</th>
+								<td>TM49</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 35 </td>
+								<td> 85 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Mud Shot</th>
+								<td>TM53</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 55 </td>
+								<td> 95 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Payback</th>
+								<td>TM57</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 50 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Low Sweep</th>
+								<td>TM75</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Round</th>
+								<td>TM76</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Bulldoze</th>
+								<td>TM81</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Stomping Tantrum</th>
+								<td>TM98</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 75 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Body Slam</th>
+								<td>TR01</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 85 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Low Kick</th>
+								<td>TR07</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Earthquake</th>
+								<td>TR10</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 100 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Substitute</th>
+								<td>TR20</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Endure</th>
+								<td>TR26</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sleep Talk</th>
+								<td>TR27</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Superpower</th>
+								<td>TR39</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Iron Defense</th>
+								<td>TR46</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Close Combat</th>
+								<td>TR53</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Focus Blast</th>
+								<td>TR64</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 120 </td>
+								<td> 70 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Earth Power</th>
+								<td>TR67</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Iron Head</th>
+								<td>TR74</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Stealth Rock</th>
+								<td>TR76</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Heavy Slam</th>
+								<td>TR79</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">High Horsepower</th>
+								<td>TR94</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 95 </td>
+								<td> 95 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Body Press</th>
+								<td>TR99</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+						</tbody>
+						<tbody class="all-by-machines moves-ultra-sun-ultra-moon">
+							<tr>
+								<th scope="row">Roar</th>
+								<td>TM05</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Toxic</th>
+								<td>TM06</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 90 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Hidden Power</th>
+								<td>TM10</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Confide</th>
+								<td>TM100</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Protect</th>
+								<td>TM17</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Frustration</th>
+								<td>TM21</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Earthquake</th>
+								<td>TM26</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 100 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Return</th>
+								<td>TM27</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Double Team</th>
+								<td>TM32</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sandstorm</th>
+								<td>TM37</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rock Tomb</th>
+								<td>TM39</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 95 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Facade</th>
+								<td>TM42</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rest</th>
+								<td>TM44</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Attract</th>
+								<td>TM45</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Low Sweep</th>
+								<td>TM47</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Round</th>
+								<td>TM48</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Focus Blast</th>
+								<td>TM52</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 120 </td>
+								<td> 70 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Payback</th>
+								<td>TM66</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 50 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Giga Impact</th>
+								<td>TM68</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 150 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Bulldoze</th>
+								<td>TM78</td>
+								<td><img src="/rustedex/assets/images/types/ground.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rock Slide</th>
+								<td>TM80</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 75 </td>
+								<td> 90 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Swagger</th>
+								<td>TM87</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 85 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sleep Talk</th>
+								<td>TM88</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Substitute</th>
+								<td>TM90</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+						</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
 	$(".all-by-levels").hide();
+	$(".all-by-machines").hide();
 	
-	$("#by-level-version-select").on('change', function(e) {
+	$("#version-select").on('change', function(e) {
 		$(".all-by-levels").hide();
-		console.log($(this).val());
+		$(".all-by-machines").hide();
 		var target = $($(this).val());
-		console.log(target);
 		target.show();
 	});
 	
 	$(".all-by-levels").first().show();
+	$(".all-by-machines").first().show();
 </script>  </div>
 </body>
 </html>

@@ -163,40 +163,67 @@
     firstDescription.addClass('collapse.show');
 });
 </script>
-<div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
-	<caption>Moves learned by Hatterene
-	<div class="dropdown float-end">
-            <select id="by-level-version-select" class="form-select w-auto" aria-label="Choose a version">
+<div class="card mb-3">
+    <div class="card-header">
+		<div class="dropdown float-end">
+            <select id="version-select" class="form-select w-auto" aria-label="Choose a version">
             </select>
         </div>
-	</caption>
-	<thead>
-		<tr>
-			<th scope="col">Name</th>
-			<th scope="col">Level</th>
-			<th scope="col">Type</th>
-			<th scope="col">Category</th>
-			<th scope="col">Power</th>
-			<th scope="col">Accuracy</th>
-			<th scope="col">PP</th>
-		<tr>
-	</thead>
-  </table>
+    </div>
+	
+	<div class="card-body">
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+					<caption>Moves learned per level by Hatterene</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">Level</th>
+							<th scope="col">Type</th>
+							<th scope="col">Category</th>
+							<th scope="col">Power</th>
+							<th scope="col">Accuracy</th>
+							<th scope="col">PP</th>
+						<tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+					<caption>Moves learned by machines by Hatterene</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">TM</th>
+							<th scope="col">Type</th>
+							<th scope="col">Category</th>
+							<th scope="col">Power</th>
+							<th scope="col">Accuracy</th>
+							<th scope="col">PP</th>
+						<tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
 	$(".all-by-levels").hide();
+	$(".all-by-machines").hide();
 	
-	$("#by-level-version-select").on('change', function(e) {
+	$("#version-select").on('change', function(e) {
 		$(".all-by-levels").hide();
-		console.log($(this).val());
+		$(".all-by-machines").hide();
 		var target = $($(this).val());
-		console.log(target);
 		target.show();
 	});
 	
 	$(".all-by-levels").first().show();
+	$(".all-by-machines").first().show();
 </script>  </div>
 </body>
 </html>

@@ -198,625 +198,1639 @@
     firstDescription.addClass('collapse.show');
 });
 </script>
-<div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
-	<caption>Moves learned by Decidueye
-	<div class="dropdown float-end">
-            <select id="by-level-version-select" class="form-select w-auto" aria-label="Choose a version">
-                    <option value="#by-level-sun-moon">Sun &amp; Moon</option>
-                    <option value="#by-level-ultra-sun-ultra-moon">Ultra Sun &amp; Ultra Moon</option>
-                    <option value="#by-level-sword-shield">Sword &amp; Shield</option>
+<div class="card mb-3">
+    <div class="card-header">
+		<div class="dropdown float-end">
+            <select id="version-select" class="form-select w-auto" aria-label="Choose a version">
+                    <option value=".moves-sun-moon">Sun &amp; Moon</option>
+                    <option value=".moves-ultra-sun-ultra-moon">Ultra Sun &amp; Ultra Moon</option>
+                    <option value=".moves-sword-shield">Sword &amp; Shield</option>
             </select>
         </div>
-	</caption>
-	<thead>
-		<tr>
-			<th scope="col">Name</th>
-			<th scope="col">Level</th>
-			<th scope="col">Type</th>
-			<th scope="col">Category</th>
-			<th scope="col">Power</th>
-			<th scope="col">Accuracy</th>
-			<th scope="col">PP</th>
-		<tr>
-	</thead>
-		<tbody id="by-level-sun-moon" class="all-by-levels">
-			<tr>
-				<th scope="row">Spirit Shackle</th>
-				<td>0</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 80 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Tackle</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 35 </td>
-			</tr>
-			<tr>
-				<th scope="row">Growl</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Peck</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 35 </td>
-				<td> 100 </td>
-				<td> 35 </td>
-			</tr>
-			<tr>
-				<th scope="row">U-turn</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 70 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Spirit Shackle</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 80 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Leafage</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Growl</th>
-				<td>4</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Peck</th>
-				<td>8</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 35 </td>
-				<td> 100 </td>
-				<td> 35 </td>
-			</tr>
-			<tr>
-				<th scope="row">Astonish</th>
-				<td>11</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 30 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Razor Leaf</th>
-				<td>15</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 55 </td>
-				<td> 95 </td>
-				<td> 25 </td>
-			</tr>
-			<tr>
-				<th scope="row">Foresight</th>
-				<td>19</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Pluck</th>
-				<td>24</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 60 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Synthesis</th>
-				<td>28</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Fury Attack</th>
-				<td>33</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 15 </td>
-				<td> 85 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Sucker Punch</th>
-				<td>38</td>
-				<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 70 </td>
-				<td> 100 </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Leaf Blade</th>
-				<td>44</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 90 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Feather Dance</th>
-				<td>49</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Brave Bird</th>
-				<td>55</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 120 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Nasty Plot</th>
-				<td>60</td>
-				<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 20 </td>
-			</tr>
-		</tbody>
-		<tbody id="by-level-sword-shield" class="all-by-levels">
-			<tr>
-				<th scope="row">Spirit Shackle</th>
-				<td>0</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 80 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Tackle</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 35 </td>
-			</tr>
-			<tr>
-				<th scope="row">Growl</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Spite</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Astonish</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 30 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">U-turn</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 70 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Leaf Storm</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 130 </td>
-				<td> 90 </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Phantom Force</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 90 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Spirit Shackle</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 80 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Leafage</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Peck</th>
-				<td>9</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 35 </td>
-				<td> 100 </td>
-				<td> 35 </td>
-			</tr>
-			<tr>
-				<th scope="row">Shadow Sneak</th>
-				<td>12</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 30 </td>
-			</tr>
-			<tr>
-				<th scope="row">Razor Leaf</th>
-				<td>15</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 55 </td>
-				<td> 95 </td>
-				<td> 25 </td>
-			</tr>
-			<tr>
-				<th scope="row">Synthesis</th>
-				<td>20</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Pluck</th>
-				<td>25</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 60 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Nasty Plot</th>
-				<td>30</td>
-				<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Sucker Punch</th>
-				<td>37</td>
-				<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 70 </td>
-				<td> 100 </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Leaf Blade</th>
-				<td>44</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 90 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Feather Dance</th>
-				<td>51</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Brave Bird</th>
-				<td>58</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 120 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-		</tbody>
-		<tbody id="by-level-ultra-sun-ultra-moon" class="all-by-levels">
-			<tr>
-				<th scope="row">Spirit Shackle</th>
-				<td>0</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 80 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Tackle</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 35 </td>
-			</tr>
-			<tr>
-				<th scope="row">Growl</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Peck</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 35 </td>
-				<td> 100 </td>
-				<td> 35 </td>
-			</tr>
-			<tr>
-				<th scope="row">U-turn</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 70 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Shadow Sneak</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 30 </td>
-			</tr>
-			<tr>
-				<th scope="row">Leaf Storm</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 130 </td>
-				<td> 90 </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Phantom Force</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 90 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Spirit Shackle</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 80 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Leafage</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Growl</th>
-				<td>4</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Peck</th>
-				<td>8</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 35 </td>
-				<td> 100 </td>
-				<td> 35 </td>
-			</tr>
-			<tr>
-				<th scope="row">Astonish</th>
-				<td>11</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 30 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Razor Leaf</th>
-				<td>14</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 55 </td>
-				<td> 95 </td>
-				<td> 25 </td>
-			</tr>
-			<tr>
-				<th scope="row">Ominous Wind</th>
-				<td>16</td>
-				<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 60 </td>
-				<td> 100 </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Foresight</th>
-				<td>19</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Pluck</th>
-				<td>24</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 60 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Synthesis</th>
-				<td>28</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Fury Attack</th>
-				<td>33</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 15 </td>
-				<td> 85 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Sucker Punch</th>
-				<td>38</td>
-				<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 70 </td>
-				<td> 100 </td>
-				<td> 5 </td>
-			</tr>
-			<tr>
-				<th scope="row">Leaf Blade</th>
-				<td>44</td>
-				<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 90 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Feather Dance</th>
-				<td>49</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Brave Bird</th>
-				<td>55</td>
-				<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 120 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Nasty Plot</th>
-				<td>60</td>
-				<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 20 </td>
-			</tr>
-		</tbody>
-  </table>
+    </div>
+	
+	<div class="card-body">
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+					<caption>Moves learned per level by Decidueye</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">Level</th>
+							<th scope="col">Type</th>
+							<th scope="col">Category</th>
+							<th scope="col">Power</th>
+							<th scope="col">Accuracy</th>
+							<th scope="col">PP</th>
+						<tr>
+					</thead>
+						<tbody class="all-by-levels moves-sun-moon">
+							<tr>
+								<th scope="row">Spirit Shackle</th>
+								<td>0</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Tackle</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 35 </td>
+							</tr>
+							<tr>
+								<th scope="row">Growl</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Peck</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 35 </td>
+								<td> 100 </td>
+								<td> 35 </td>
+							</tr>
+							<tr>
+								<th scope="row">U-turn</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Spirit Shackle</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leafage</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Growl</th>
+								<td>4</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Peck</th>
+								<td>8</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 35 </td>
+								<td> 100 </td>
+								<td> 35 </td>
+							</tr>
+							<tr>
+								<th scope="row">Astonish</th>
+								<td>11</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 30 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Razor Leaf</th>
+								<td>15</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 55 </td>
+								<td> 95 </td>
+								<td> 25 </td>
+							</tr>
+							<tr>
+								<th scope="row">Foresight</th>
+								<td>19</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Pluck</th>
+								<td>24</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Synthesis</th>
+								<td>28</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Fury Attack</th>
+								<td>33</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 15 </td>
+								<td> 85 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sucker Punch</th>
+								<td>38</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leaf Blade</th>
+								<td>44</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Feather Dance</th>
+								<td>49</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Brave Bird</th>
+								<td>55</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Nasty Plot</th>
+								<td>60</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+						</tbody>
+						<tbody class="all-by-levels moves-sword-shield">
+							<tr>
+								<th scope="row">Spirit Shackle</th>
+								<td>0</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Tackle</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 35 </td>
+							</tr>
+							<tr>
+								<th scope="row">Growl</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Spite</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Astonish</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 30 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">U-turn</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leaf Storm</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 130 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Phantom Force</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Spirit Shackle</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leafage</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Peck</th>
+								<td>9</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 35 </td>
+								<td> 100 </td>
+								<td> 35 </td>
+							</tr>
+							<tr>
+								<th scope="row">Shadow Sneak</th>
+								<td>12</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Razor Leaf</th>
+								<td>15</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 55 </td>
+								<td> 95 </td>
+								<td> 25 </td>
+							</tr>
+							<tr>
+								<th scope="row">Synthesis</th>
+								<td>20</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Pluck</th>
+								<td>25</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Nasty Plot</th>
+								<td>30</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sucker Punch</th>
+								<td>37</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leaf Blade</th>
+								<td>44</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Feather Dance</th>
+								<td>51</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Brave Bird</th>
+								<td>58</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+						</tbody>
+						<tbody class="all-by-levels moves-ultra-sun-ultra-moon">
+							<tr>
+								<th scope="row">Spirit Shackle</th>
+								<td>0</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Tackle</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 35 </td>
+							</tr>
+							<tr>
+								<th scope="row">Growl</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Peck</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 35 </td>
+								<td> 100 </td>
+								<td> 35 </td>
+							</tr>
+							<tr>
+								<th scope="row">U-turn</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Shadow Sneak</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leaf Storm</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 130 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Phantom Force</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Spirit Shackle</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leafage</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Growl</th>
+								<td>4</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Peck</th>
+								<td>8</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 35 </td>
+								<td> 100 </td>
+								<td> 35 </td>
+							</tr>
+							<tr>
+								<th scope="row">Astonish</th>
+								<td>11</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 30 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Razor Leaf</th>
+								<td>14</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 55 </td>
+								<td> 95 </td>
+								<td> 25 </td>
+							</tr>
+							<tr>
+								<th scope="row">Ominous Wind</th>
+								<td>16</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Foresight</th>
+								<td>19</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Pluck</th>
+								<td>24</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Synthesis</th>
+								<td>28</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Fury Attack</th>
+								<td>33</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 15 </td>
+								<td> 85 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sucker Punch</th>
+								<td>38</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leaf Blade</th>
+								<td>44</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Feather Dance</th>
+								<td>49</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Brave Bird</th>
+								<td>55</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Nasty Plot</th>
+								<td>60</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+						</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+					<caption>Moves learned by machines by Decidueye</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">TM</th>
+							<th scope="col">Type</th>
+							<th scope="col">Category</th>
+							<th scope="col">Power</th>
+							<th scope="col">Accuracy</th>
+							<th scope="col">PP</th>
+						<tr>
+					</thead>
+						<tbody class="all-by-machines moves-sun-moon">
+							<tr>
+								<th scope="row">Work Up</th>
+								<td>TM01</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Toxic</th>
+								<td>TM06</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 90 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Hidden Power</th>
+								<td>TM10</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Confide</th>
+								<td>TM100</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sunny Day</th>
+								<td>TM11</td>
+								<td><img src="/rustedex/assets/images/types/fire.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Light Screen</th>
+								<td>TM16</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Protect</th>
+								<td>TM17</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Roost</th>
+								<td>TM19</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Safeguard</th>
+								<td>TM20</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 25 </td>
+							</tr>
+							<tr>
+								<th scope="row">Frustration</th>
+								<td>TM21</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Solar Beam</th>
+								<td>TM22</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Smack Down</th>
+								<td>TM23</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 50 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Return</th>
+								<td>TM27</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Shadow Ball</th>
+								<td>TM30</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Double Team</th>
+								<td>TM32</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Facade</th>
+								<td>TM42</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rest</th>
+								<td>TM44</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Attract</th>
+								<td>TM45</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Low Sweep</th>
+								<td>TM47</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Round</th>
+								<td>TM48</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Echoed Voice</th>
+								<td>TM49</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Steel Wing</th>
+								<td>TM51</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 90 </td>
+								<td> 25 </td>
+							</tr>
+							<tr>
+								<th scope="row">Energy Ball</th>
+								<td>TM53</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">False Swipe</th>
+								<td>TM54</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Acrobatics</th>
+								<td>TM62</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 55 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Shadow Claw</th>
+								<td>TM65</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Giga Impact</th>
+								<td>TM68</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 150 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Swords Dance</th>
+								<td>TM75</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Grass Knot</th>
+								<td>TM86</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Swagger</th>
+								<td>TM87</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 85 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sleep Talk</th>
+								<td>TM88</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">U-turn</th>
+								<td>TM89</td>
+								<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Substitute</th>
+								<td>TM90</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Nature Power</th>
+								<td>TM96</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+						</tbody>
+						<tbody class="all-by-machines moves-sword-shield">
+							<tr>
+								<th scope="row">Hyper Beam</th>
+								<td>TM08</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 150 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Giga Impact</th>
+								<td>TM09</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 150 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Solar Beam</th>
+								<td>TM11</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Solar Blade</th>
+								<td>TM12</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 125 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Light Screen</th>
+								<td>TM17</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Safeguard</th>
+								<td>TM19</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 25 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rest</th>
+								<td>TM21</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Snore</th>
+								<td>TM24</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 50 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Protect</th>
+								<td>TM25</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Giga Drain</th>
+								<td>TM28</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 75 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Steel Wing</th>
+								<td>TM30</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 90 </td>
+								<td> 25 </td>
+							</tr>
+							<tr>
+								<th scope="row">Attract</th>
+								<td>TM31</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sunny Day</th>
+								<td>TM34</td>
+								<td><img src="/rustedex/assets/images/types/fire.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Facade</th>
+								<td>TM39</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Swift</th>
+								<td>TM40</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Imprison</th>
+								<td>TM44</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">U-turn</th>
+								<td>TM56</td>
+								<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Shadow Claw</th>
+								<td>TM65</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Psycho Cut</th>
+								<td>TM69</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Low Sweep</th>
+								<td>TM75</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Round</th>
+								<td>TM76</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Hex</th>
+								<td>TM77</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Acrobatics</th>
+								<td>TM78</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 55 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Phantom Force</th>
+								<td>TM86</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">False Swipe</th>
+								<td>TM94</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Air Slash</th>
+								<td>TM95</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 75 </td>
+								<td> 95 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Swords Dance</th>
+								<td>TR00</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Substitute</th>
+								<td>TR20</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Endure</th>
+								<td>TR26</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sleep Talk</th>
+								<td>TR27</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Baton Pass</th>
+								<td>TR29</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Shadow Ball</th>
+								<td>TR33</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leaf Blade</th>
+								<td>TR50</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Seed Bomb</th>
+								<td>TR59</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Energy Ball</th>
+								<td>TR65</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Brave Bird</th>
+								<td>TR66</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Nasty Plot</th>
+								<td>TR68</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leaf Storm</th>
+								<td>TR71</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 130 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Grass Knot</th>
+								<td>TR77</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Work Up</th>
+								<td>TR85</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Hurricane</th>
+								<td>TR89</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 110 </td>
+								<td> 70 </td>
+								<td> 10 </td>
+							</tr>
+						</tbody>
+						<tbody class="all-by-machines moves-ultra-sun-ultra-moon">
+							<tr>
+								<th scope="row">Work Up</th>
+								<td>TM01</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Toxic</th>
+								<td>TM06</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 90 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Hidden Power</th>
+								<td>TM10</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Confide</th>
+								<td>TM100</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sunny Day</th>
+								<td>TM11</td>
+								<td><img src="/rustedex/assets/images/types/fire.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Light Screen</th>
+								<td>TM16</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Protect</th>
+								<td>TM17</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Roost</th>
+								<td>TM19</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Safeguard</th>
+								<td>TM20</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 25 </td>
+							</tr>
+							<tr>
+								<th scope="row">Frustration</th>
+								<td>TM21</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Solar Beam</th>
+								<td>TM22</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 120 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Smack Down</th>
+								<td>TM23</td>
+								<td><img src="/rustedex/assets/images/types/rock.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 50 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Return</th>
+								<td>TM27</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Shadow Ball</th>
+								<td>TM30</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Double Team</th>
+								<td>TM32</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Facade</th>
+								<td>TM42</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rest</th>
+								<td>TM44</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Attract</th>
+								<td>TM45</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Low Sweep</th>
+								<td>TM47</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Round</th>
+								<td>TM48</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Echoed Voice</th>
+								<td>TM49</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Steel Wing</th>
+								<td>TM51</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 90 </td>
+								<td> 25 </td>
+							</tr>
+							<tr>
+								<th scope="row">Energy Ball</th>
+								<td>TM53</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">False Swipe</th>
+								<td>TM54</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Acrobatics</th>
+								<td>TM62</td>
+								<td><img src="/rustedex/assets/images/types/flying.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 55 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Shadow Claw</th>
+								<td>TM65</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Giga Impact</th>
+								<td>TM68</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 150 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Swords Dance</th>
+								<td>TM75</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Grass Knot</th>
+								<td>TM86</td>
+								<td><img src="/rustedex/assets/images/types/grass.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Swagger</th>
+								<td>TM87</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 85 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sleep Talk</th>
+								<td>TM88</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">U-turn</th>
+								<td>TM89</td>
+								<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Substitute</th>
+								<td>TM90</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Nature Power</th>
+								<td>TM96</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+						</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
 	$(".all-by-levels").hide();
+	$(".all-by-machines").hide();
 	
-	$("#by-level-version-select").on('change', function(e) {
+	$("#version-select").on('change', function(e) {
 		$(".all-by-levels").hide();
-		console.log($(this).val());
+		$(".all-by-machines").hide();
 		var target = $($(this).val());
-		console.log(target);
 		target.show();
 	});
 	
 	$(".all-by-levels").first().show();
+	$(".all-by-machines").first().show();
 </script>  </div>
 </body>
 </html>

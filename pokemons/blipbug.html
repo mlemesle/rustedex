@@ -163,52 +163,79 @@
     firstDescription.addClass('collapse.show');
 });
 </script>
-<div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
-	<caption>Moves learned by Blipbug
-	<div class="dropdown float-end">
-            <select id="by-level-version-select" class="form-select w-auto" aria-label="Choose a version">
-                    <option value="#by-level-sword-shield">Sword &amp; Shield</option>
+<div class="card mb-3">
+    <div class="card-header">
+		<div class="dropdown float-end">
+            <select id="version-select" class="form-select w-auto" aria-label="Choose a version">
+                    <option value=".moves-sword-shield">Sword &amp; Shield</option>
             </select>
         </div>
-	</caption>
-	<thead>
-		<tr>
-			<th scope="col">Name</th>
-			<th scope="col">Level</th>
-			<th scope="col">Type</th>
-			<th scope="col">Category</th>
-			<th scope="col">Power</th>
-			<th scope="col">Accuracy</th>
-			<th scope="col">PP</th>
-		<tr>
-	</thead>
-		<tbody id="by-level-sword-shield" class="all-by-levels">
-			<tr>
-				<th scope="row">Struggle Bug</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 50 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-		</tbody>
-  </table>
+    </div>
+	
+	<div class="card-body">
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+					<caption>Moves learned per level by Blipbug</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">Level</th>
+							<th scope="col">Type</th>
+							<th scope="col">Category</th>
+							<th scope="col">Power</th>
+							<th scope="col">Accuracy</th>
+							<th scope="col">PP</th>
+						<tr>
+					</thead>
+						<tbody class="all-by-levels moves-sword-shield">
+							<tr>
+								<th scope="row">Struggle Bug</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/bug.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 50 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+						</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+					<caption>Moves learned by machines by Blipbug</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">TM</th>
+							<th scope="col">Type</th>
+							<th scope="col">Category</th>
+							<th scope="col">Power</th>
+							<th scope="col">Accuracy</th>
+							<th scope="col">PP</th>
+						<tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
 	$(".all-by-levels").hide();
+	$(".all-by-machines").hide();
 	
-	$("#by-level-version-select").on('change', function(e) {
+	$("#version-select").on('change', function(e) {
 		$(".all-by-levels").hide();
-		console.log($(this).val());
+		$(".all-by-machines").hide();
 		var target = $($(this).val());
-		console.log(target);
 		target.show();
 	});
 	
 	$(".all-by-levels").first().show();
+	$(".all-by-machines").first().show();
 </script>  </div>
 </body>
 </html>

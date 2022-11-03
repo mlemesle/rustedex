@@ -163,277 +163,675 @@
     firstDescription.addClass('collapse.show');
 });
 </script>
-<div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
-	<caption>Moves learned by Toxtricity
-	<div class="dropdown float-end">
-            <select id="by-level-version-select" class="form-select w-auto" aria-label="Choose a version">
-                    <option value="#by-level-sword-shield">Sword &amp; Shield</option>
+<div class="card mb-3">
+    <div class="card-header">
+		<div class="dropdown float-end">
+            <select id="version-select" class="form-select w-auto" aria-label="Choose a version">
+                    <option value=".moves-sword-shield">Sword &amp; Shield</option>
             </select>
         </div>
-	</caption>
-	<thead>
-		<tr>
-			<th scope="col">Name</th>
-			<th scope="col">Level</th>
-			<th scope="col">Type</th>
-			<th scope="col">Category</th>
-			<th scope="col">Power</th>
-			<th scope="col">Accuracy</th>
-			<th scope="col">PP</th>
-		<tr>
-	</thead>
-		<tbody id="by-level-sword-shield" class="all-by-levels">
-			<tr>
-				<th scope="row">Spark</th>
-				<td>0</td>
-				<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 65 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Leer</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 30 </td>
-			</tr>
-			<tr>
-				<th scope="row">Growl</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Acid</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 30 </td>
-			</tr>
-			<tr>
-				<th scope="row">Thunder Shock</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 30 </td>
-			</tr>
-			<tr>
-				<th scope="row">Flail</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Spark</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 65 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Acid Spray</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 40 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Belch</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 120 </td>
-				<td> 90 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Noble Roar</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 30 </td>
-			</tr>
-			<tr>
-				<th scope="row">Eerie Impulse</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Nuzzle</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 20 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Tearful Look</th>
-				<td>1</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Charge</th>
-				<td>4</td>
-				<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Shock Wave</th>
-				<td>8</td>
-				<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 60 </td>
-				<td> &mdash; </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Scary Face</th>
-				<td>12</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Taunt</th>
-				<td>16</td>
-				<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Venoshock</th>
-				<td>20</td>
-				<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 65 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Screech</th>
-				<td>24</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 85 </td>
-				<td> 40 </td>
-			</tr>
-			<tr>
-				<th scope="row">Swagger</th>
-				<td>28</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 85 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Toxic</th>
-				<td>32</td>
-				<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> 90 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Discharge</th>
-				<td>36</td>
-				<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 80 </td>
-				<td> 100 </td>
-				<td> 15 </td>
-			</tr>
-			<tr>
-				<th scope="row">Poison Jab</th>
-				<td>40</td>
-				<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
-				<td> 80 </td>
-				<td> 100 </td>
-				<td> 20 </td>
-			</tr>
-			<tr>
-				<th scope="row">Overdrive</th>
-				<td>44</td>
-				<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 80 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Boomburst</th>
-				<td>48</td>
-				<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
-				<td> 140 </td>
-				<td> 100 </td>
-				<td> 10 </td>
-			</tr>
-			<tr>
-				<th scope="row">Shift Gear</th>
-				<td>52</td>
-				<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
-				<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
-				<td> &mdash; </td>
-				<td> &mdash; </td>
-				<td> 10 </td>
-			</tr>
-		</tbody>
-  </table>
+    </div>
+	
+	<div class="card-body">
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+					<caption>Moves learned per level by Toxtricity</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">Level</th>
+							<th scope="col">Type</th>
+							<th scope="col">Category</th>
+							<th scope="col">Power</th>
+							<th scope="col">Accuracy</th>
+							<th scope="col">PP</th>
+						<tr>
+					</thead>
+						<tbody class="all-by-levels moves-sword-shield">
+							<tr>
+								<th scope="row">Spark</th>
+								<td>0</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Leer</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Growl</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Acid</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Thunder Shock</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Flail</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Spark</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Acid Spray</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 40 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Belch</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 120 </td>
+								<td> 90 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Noble Roar</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 30 </td>
+							</tr>
+							<tr>
+								<th scope="row">Eerie Impulse</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Nuzzle</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 20 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Tearful Look</th>
+								<td>1</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Charge</th>
+								<td>4</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Shock Wave</th>
+								<td>8</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Scary Face</th>
+								<td>12</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Taunt</th>
+								<td>16</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Venoshock</th>
+								<td>20</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Screech</th>
+								<td>24</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 85 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Swagger</th>
+								<td>28</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 85 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Toxic</th>
+								<td>32</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 90 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Discharge</th>
+								<td>36</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Poison Jab</th>
+								<td>40</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Overdrive</th>
+								<td>44</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Boomburst</th>
+								<td>48</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 140 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Shift Gear</th>
+								<td>52</td>
+								<td><img src="/rustedex/assets/images/types/steel.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+						</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover text-center caption-top align-middle">
+					<caption>Moves learned by machines by Toxtricity</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">TM</th>
+							<th scope="col">Type</th>
+							<th scope="col">Category</th>
+							<th scope="col">Power</th>
+							<th scope="col">Accuracy</th>
+							<th scope="col">PP</th>
+						<tr>
+					</thead>
+						<tbody class="all-by-machines moves-sword-shield">
+							<tr>
+								<th scope="row">Mega Punch</th>
+								<td>TM00</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 85 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Mega Kick</th>
+								<td>TM01</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 75 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Fire Punch</th>
+								<td>TM03</td>
+								<td><img src="/rustedex/assets/images/types/fire.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 75 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Thunder Punch</th>
+								<td>TM05</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 75 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Hyper Beam</th>
+								<td>TM08</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 150 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Giga Impact</th>
+								<td>TM09</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 150 </td>
+								<td> 90 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Thunder Wave</th>
+								<td>TM14</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 90 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Screech</th>
+								<td>TM16</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 85 </td>
+								<td> 40 </td>
+							</tr>
+							<tr>
+								<th scope="row">Rest</th>
+								<td>TM21</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Snore</th>
+								<td>TM24</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 50 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Protect</th>
+								<td>TM25</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Scary Face</th>
+								<td>TM26</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Attract</th>
+								<td>TM31</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Facade</th>
+								<td>TM39</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Swift</th>
+								<td>TM40</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> &mdash; </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Payback</th>
+								<td>TM57</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 50 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Fling</th>
+								<td>TM59</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Drain Punch</th>
+								<td>TM63</td>
+								<td><img src="/rustedex/assets/images/types/fighting.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 75 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Venoshock</th>
+								<td>TM74</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Round</th>
+								<td>TM76</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 60 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Hex</th>
+								<td>TM77</td>
+								<td><img src="/rustedex/assets/images/types/ghost.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 65 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Volt Switch</th>
+								<td>TM80</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 70 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Snarl</th>
+								<td>TM85</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 55 </td>
+								<td> 95 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Eerie Impulse</th>
+								<td>TM93</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Thunderbolt</th>
+								<td>TR08</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Thunder</th>
+								<td>TR09</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 110 </td>
+								<td> 70 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Substitute</th>
+								<td>TR20</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sludge Bomb</th>
+								<td>TR22</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Endure</th>
+								<td>TR26</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sleep Talk</th>
+								<td>TR27</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> &mdash; </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Encore</th>
+								<td>TR30</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Uproar</th>
+								<td>TR35</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Taunt</th>
+								<td>TR37</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/status.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Hyper Voice</th>
+								<td>TR42</td>
+								<td><img src="/rustedex/assets/images/types/normal.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Poison Jab</th>
+								<td>TR57</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 20 </td>
+							</tr>
+							<tr>
+								<th scope="row">Gunk Shot</th>
+								<td>TR73</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 120 </td>
+								<td> 80 </td>
+								<td> 5 </td>
+							</tr>
+							<tr>
+								<th scope="row">Sludge Wave</th>
+								<td>TR78</td>
+								<td><img src="/rustedex/assets/images/types/poison.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 95 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Electro Ball</th>
+								<td>TR80</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> &mdash; </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Stored Power</th>
+								<td>TR82</td>
+								<td><img src="/rustedex/assets/images/types/psychic.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/special.png" class="category"></td>
+								<td> 20 </td>
+								<td> 100 </td>
+								<td> 10 </td>
+							</tr>
+							<tr>
+								<th scope="row">Wild Charge</th>
+								<td>TR86</td>
+								<td><img src="/rustedex/assets/images/types/electric.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 90 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+							<tr>
+								<th scope="row">Throat Chop</th>
+								<td>TR95</td>
+								<td><img src="/rustedex/assets/images/types/dark.png" class="type"></td>
+								<td><img src="/rustedex/assets/images/categories/physical.png" class="category"></td>
+								<td> 80 </td>
+								<td> 100 </td>
+								<td> 15 </td>
+							</tr>
+						</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
 	$(".all-by-levels").hide();
+	$(".all-by-machines").hide();
 	
-	$("#by-level-version-select").on('change', function(e) {
+	$("#version-select").on('change', function(e) {
 		$(".all-by-levels").hide();
-		console.log($(this).val());
+		$(".all-by-machines").hide();
 		var target = $($(this).val());
-		console.log(target);
 		target.show();
 	});
 	
 	$(".all-by-levels").first().show();
+	$(".all-by-machines").first().show();
 </script>  </div>
 </body>
 </html>
